@@ -12,14 +12,25 @@
  */
 class StackendCategory extends BaseStackendCategory
 {
-	public function getActiveJobs($max = 10)
-	{
-		$q = Doctrine_Query::create()
-			->from('StackendJob j')
-			->where('j.category_id = ?', $this->getId())
-			->limit($max);
+public function getActiveJobs($max = 10)
+{
+  $q = $this->getActiveJobsQuery()
+    ->limit($max);
  
-		return Doctrine_Core::getTable('StackendJob')->getActiveJobs($q);
-	}
+  return $q->execute();
+}
 	
+	public function getActiveJobsQuery()
+{
+  $q = Doctrine_Query::create()
+    ->from('StackendJob j')
+    ->where('j.category_id = ?', $this->getId());
+ 
+  return Doctrine_Core::getTable('StackendJob')->addActiveJobsQuery($q);
+}
+
+public function countActiveJobs()
+{
+  return $this->getActiveJobsQuery()->count();
+}
 }

@@ -15,8 +15,17 @@ class categoryActions extends sfActions
   *
   * @param sfRequest $request A request object
   */
-  public function executeIndex(sfWebRequest $request)
+  
+   public function executeShow(sfWebRequest $request)
   {
-    $this->forward('default', 'module');
+  $this->category = $this->getRoute()->getObject();
+ 
+  $this->pager = new sfDoctrinePager(
+    'StackendJob',
+    sfConfig::get('app_max_jobs_on_category')
+  );
+  $this->pager->setQuery($this->category->getActiveJobsQuery());
+  $this->pager->setPage($request->getParameter('page', 1));
+  $this->pager->init();
   }
 }
