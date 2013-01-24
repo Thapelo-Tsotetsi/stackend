@@ -1,0 +1,426 @@
+Jan 24 11:59:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 11:59:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 11:59:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 11:59:14 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 11:59:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 11:59:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 11:59:14 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 11:59:14 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 11:59:14 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 11:59:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 11:59:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 11:59:14 symfony [info] {sfWebDebugLogger} Configuration 220.30 ms (10)
+Jan 24 11:59:14 symfony [info] {sfWebDebugLogger} Factories 300.83 ms (1)
+Jan 24 11:59:14 symfony [info] {sfWebDebugLogger} Action "job/index" 166.33 ms (1)
+Jan 24 11:59:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 46.19 ms (2)
+Jan 24 11:59:14 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 72.21 ms (1)
+Jan 24 11:59:14 symfony [info] {sfWebResponse} Send content (34448 o)
+Jan 24 12:00:24 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/new with parameters array (  'module' => 'job',  'action' => 'new',)
+Jan 24 12:00:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:00:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:00:24 symfony [info] {jobActions} Call "jobActions->executeNew()"
+Jan 24 12:00:24 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/newSuccess.php"
+Jan 24 12:00:24 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_form.php"
+Jan 24 12:00:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:00:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_category s - ()
+Jan 24 12:00:25 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:00:25 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:00:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:00:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:00:25 symfony [info] {sfWebDebugLogger} Configuration 4.05 ms (9)
+Jan 24 12:00:25 symfony [info] {sfWebDebugLogger} Factories 112.14 ms (1)
+Jan 24 12:00:25 symfony [info] {sfWebDebugLogger} Action "job/new" 166.47 ms (1)
+Jan 24 12:00:25 symfony [info] {sfWebDebugLogger} View "Success" for "job/new" 288.99 ms (1)
+Jan 24 12:00:25 symfony [info] {sfWebDebugLogger} Partial "job/_form" 236.29 ms (1)
+Jan 24 12:00:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 41.03 ms (2)
+Jan 24 12:00:25 symfony [info] {sfWebResponse} Send content (57497 o)
+Jan 24 12:04:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/new with parameters array (  'module' => 'job',  'action' => 'new',)
+Jan 24 12:04:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:04:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:04:45 symfony [info] {jobActions} Call "jobActions->executeNew()"
+Jan 24 12:04:45 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/newSuccess.php"
+Jan 24 12:04:45 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_form.php"
+Jan 24 12:04:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:04:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_category s - ()
+Jan 24 12:04:45 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:04:45 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:04:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:04:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:04:45 symfony [info] {sfWebDebugLogger} Configuration 3.97 ms (9)
+Jan 24 12:04:45 symfony [info] {sfWebDebugLogger} Factories 102.28 ms (1)
+Jan 24 12:04:45 symfony [info] {sfWebDebugLogger} Action "job/new" 106.16 ms (1)
+Jan 24 12:04:45 symfony [info] {sfWebDebugLogger} View "Success" for "job/new" 222.64 ms (1)
+Jan 24 12:04:45 symfony [info] {sfWebDebugLogger} Partial "job/_form" 194.05 ms (1)
+Jan 24 12:04:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.29 ms (2)
+Jan 24 12:04:45 symfony [info] {sfWebResponse} Send content (59098 o)
+Jan 24 12:08:28 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/new with parameters array (  'module' => 'job',  'action' => 'new',)
+Jan 24 12:08:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:08:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:08:28 symfony [info] {jobActions} Call "jobActions->executeNew()"
+Jan 24 12:08:28 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/newSuccess.php"
+Jan 24 12:08:28 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_form.php"
+Jan 24 12:08:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:08:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_category s - ()
+Jan 24 12:08:29 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:08:29 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:08:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:08:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:08:29 symfony [info] {sfWebDebugLogger} Configuration 4.22 ms (9)
+Jan 24 12:08:29 symfony [info] {sfWebDebugLogger} Factories 98.32 ms (1)
+Jan 24 12:08:29 symfony [info] {sfWebDebugLogger} Action "job/new" 116.49 ms (1)
+Jan 24 12:08:29 symfony [info] {sfWebDebugLogger} View "Success" for "job/new" 214.74 ms (1)
+Jan 24 12:08:29 symfony [info] {sfWebDebugLogger} Partial "job/_form" 152.00 ms (1)
+Jan 24 12:08:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.31 ms (2)
+Jan 24 12:08:29 symfony [info] {sfWebResponse} Send content (59097 o)
+Jan 24 12:08:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/new with parameters array (  'module' => 'job',  'action' => 'new',)
+Jan 24 12:08:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:08:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:08:33 symfony [info] {jobActions} Call "jobActions->executeNew()"
+Jan 24 12:08:33 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/newSuccess.php"
+Jan 24 12:08:33 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_form.php"
+Jan 24 12:08:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:08:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_category s - ()
+Jan 24 12:08:33 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:08:33 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:08:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:08:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:08:33 symfony [info] {sfWebDebugLogger} Configuration 3.55 ms (9)
+Jan 24 12:08:33 symfony [info] {sfWebDebugLogger} Factories 83.14 ms (1)
+Jan 24 12:08:33 symfony [info] {sfWebDebugLogger} Action "job/new" 93.69 ms (1)
+Jan 24 12:08:33 symfony [info] {sfWebDebugLogger} View "Success" for "job/new" 176.29 ms (1)
+Jan 24 12:08:33 symfony [info] {sfWebDebugLogger} Partial "job/_form" 149.90 ms (1)
+Jan 24 12:08:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.99 ms (2)
+Jan 24 12:08:33 symfony [info] {sfWebResponse} Send content (59096 o)
+Jan 24 12:08:36 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/new with parameters array (  'module' => 'job',  'action' => 'new',)
+Jan 24 12:08:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:08:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:08:36 symfony [info] {jobActions} Call "jobActions->executeNew()"
+Jan 24 12:08:36 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/newSuccess.php"
+Jan 24 12:08:36 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_form.php"
+Jan 24 12:08:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:08:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_category s - ()
+Jan 24 12:08:36 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:08:36 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:08:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:08:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:08:36 symfony [info] {sfWebDebugLogger} Configuration 4.45 ms (9)
+Jan 24 12:08:36 symfony [info] {sfWebDebugLogger} Factories 83.15 ms (1)
+Jan 24 12:08:36 symfony [info] {sfWebDebugLogger} Action "job/new" 90.43 ms (1)
+Jan 24 12:08:36 symfony [info] {sfWebDebugLogger} View "Success" for "job/new" 189.87 ms (1)
+Jan 24 12:08:36 symfony [info] {sfWebDebugLogger} Partial "job/_form" 165.27 ms (1)
+Jan 24 12:08:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.12 ms (2)
+Jan 24 12:08:36 symfony [info] {sfWebResponse} Send content (59096 o)
+Jan 24 12:08:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Jan 24 12:08:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:08:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:08:44 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Jan 24 12:08:44 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Jan 24 12:08:44 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jan 24 12:08:44 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jan 24 12:08:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:08:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:08:44 symfony [info] {sfWebDebugLogger} Configuration 71.63 ms (10)
+Jan 24 12:08:44 symfony [info] {sfWebDebugLogger} Factories 81.27 ms (1)
+Jan 24 12:08:44 symfony [info] {sfWebDebugLogger} Action "default/index" 0.28 ms (1)
+Jan 24 12:08:44 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 44.81 ms (1)
+Jan 24 12:08:44 symfony [info] {sfWebResponse} Send content (29171 o)
+Jan 24 12:08:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 12:08:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:08:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:08:48 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 12:08:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:08:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 12:08:48 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 12:08:48 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:08:48 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:08:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:08:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:08:48 symfony [info] {sfWebDebugLogger} Configuration 4.02 ms (9)
+Jan 24 12:08:48 symfony [info] {sfWebDebugLogger} Factories 83.46 ms (1)
+Jan 24 12:08:48 symfony [info] {sfWebDebugLogger} Action "job/index" 88.19 ms (1)
+Jan 24 12:08:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.16 ms (2)
+Jan 24 12:08:48 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 57.39 ms (1)
+Jan 24 12:08:48 symfony [info] {sfWebResponse} Send content (36012 o)
+Jan 24 12:09:45 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 12:09:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:09:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:09:45 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 12:09:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:09:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 12:09:46 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 12:09:46 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:09:46 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:09:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:09:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:09:46 symfony [info] {sfWebDebugLogger} Configuration 288.79 ms (9)
+Jan 24 12:09:46 symfony [info] {sfWebDebugLogger} Factories 239.43 ms (1)
+Jan 24 12:09:46 symfony [info] {sfWebDebugLogger} Action "job/index" 92.58 ms (1)
+Jan 24 12:09:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.53 ms (2)
+Jan 24 12:09:46 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 54.15 ms (1)
+Jan 24 12:09:46 symfony [info] {sfWebResponse} Send content (36047 o)
+Jan 24 12:13:08 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 12:13:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:13:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:13:08 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 12:13:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:13:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 12:13:08 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 12:13:08 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:13:08 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:13:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:13:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:13:08 symfony [info] {sfWebDebugLogger} Configuration 3.89 ms (9)
+Jan 24 12:13:08 symfony [info] {sfWebDebugLogger} Factories 86.68 ms (1)
+Jan 24 12:13:08 symfony [info] {sfWebDebugLogger} Action "job/index" 90.90 ms (1)
+Jan 24 12:13:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.66 ms (2)
+Jan 24 12:13:08 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 38.18 ms (1)
+Jan 24 12:13:08 symfony [info] {sfWebResponse} Send content (36044 o)
+Jan 24 12:13:17 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 12:13:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:13:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:13:17 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 12:13:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:13:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 12:13:17 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 12:13:17 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:13:17 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:13:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:13:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:13:17 symfony [info] {sfWebDebugLogger} Configuration 4.01 ms (9)
+Jan 24 12:13:17 symfony [info] {sfWebDebugLogger} Factories 76.28 ms (1)
+Jan 24 12:13:17 symfony [info] {sfWebDebugLogger} Action "job/index" 102.40 ms (1)
+Jan 24 12:13:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.64 ms (2)
+Jan 24 12:13:17 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 40.13 ms (1)
+Jan 24 12:13:17 symfony [info] {sfWebResponse} Send content (36045 o)
+Jan 24 12:16:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 12:16:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:16:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:16:11 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 12:16:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:16:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 12:16:11 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 12:16:12 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:16:12 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:16:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:16:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:16:12 symfony [info] {sfWebDebugLogger} Configuration 3.64 ms (9)
+Jan 24 12:16:12 symfony [info] {sfWebDebugLogger} Factories 96.88 ms (1)
+Jan 24 12:16:12 symfony [info] {sfWebDebugLogger} Action "job/index" 91.50 ms (1)
+Jan 24 12:16:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.15 ms (2)
+Jan 24 12:16:12 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 47.08 ms (1)
+Jan 24 12:16:12 symfony [info] {sfWebResponse} Send content (36044 o)
+Jan 24 12:17:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 12:17:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:17:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:17:01 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 12:17:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:17:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 12:17:01 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 12:17:01 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:17:01 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:17:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:17:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:17:01 symfony [info] {sfWebDebugLogger} Configuration 5.96 ms (9)
+Jan 24 12:17:01 symfony [info] {sfWebDebugLogger} Factories 100.88 ms (1)
+Jan 24 12:17:01 symfony [info] {sfWebDebugLogger} Action "job/index" 102.46 ms (1)
+Jan 24 12:17:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.15 ms (2)
+Jan 24 12:17:01 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 60.07 ms (1)
+Jan 24 12:17:01 symfony [info] {sfWebResponse} Send content (36046 o)
+Jan 24 12:17:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/new with parameters array (  'module' => 'job',  'action' => 'new',)
+Jan 24 12:17:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:17:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:17:22 symfony [info] {jobActions} Call "jobActions->executeNew()"
+Jan 24 12:17:22 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/newSuccess.php"
+Jan 24 12:17:22 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_form.php"
+Jan 24 12:17:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:17:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_category s - ()
+Jan 24 12:17:23 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:17:23 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:17:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:17:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:17:23 symfony [info] {sfWebDebugLogger} Configuration 3.43 ms (9)
+Jan 24 12:17:23 symfony [info] {sfWebDebugLogger} Factories 82.53 ms (1)
+Jan 24 12:17:23 symfony [info] {sfWebDebugLogger} Action "job/new" 148.83 ms (1)
+Jan 24 12:17:23 symfony [info] {sfWebDebugLogger} View "Success" for "job/new" 252.22 ms (1)
+Jan 24 12:17:23 symfony [info] {sfWebDebugLogger} Partial "job/_form" 197.68 ms (1)
+Jan 24 12:17:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.12 ms (2)
+Jan 24 12:17:23 symfony [info] {sfWebResponse} Send content (59065 o)
+Jan 24 12:35:12 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 12:35:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:35:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:35:12 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 12:35:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:35:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 12:35:12 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 12:35:12 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:35:12 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:35:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:35:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:35:12 symfony [info] {sfWebDebugLogger} Configuration 57.57 ms (10)
+Jan 24 12:35:12 symfony [info] {sfWebDebugLogger} Factories 83.95 ms (1)
+Jan 24 12:35:12 symfony [info] {sfWebDebugLogger} Action "job/index" 94.73 ms (1)
+Jan 24 12:35:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.59 ms (2)
+Jan 24 12:35:12 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 139.44 ms (1)
+Jan 24 12:35:12 symfony [info] {sfWebResponse} Send content (36111 o)
+Jan 24 12:43:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 12:43:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:43:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:43:01 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 12:43:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:43:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 12:43:01 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 12:43:01 symfony [notice] {sfWebDebugLogger}  Notice at /home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php on line 5 (Undefined variable: jobeet_jobs)
+Jan 24 12:43:01 symfony [warning] {sfWebDebugLogger}  Warning at /home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php on line 5 (Invalid argument supplied for foreach())
+Jan 24 12:43:01 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:43:01 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:43:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:43:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:43:01 symfony [info] {sfWebDebugLogger} Configuration 4.33 ms (9)
+Jan 24 12:43:01 symfony [info] {sfWebDebugLogger} Factories 87.11 ms (1)
+Jan 24 12:43:01 symfony [info] {sfWebDebugLogger} Action "job/index" 86.65 ms (1)
+Jan 24 12:43:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.59 ms (2)
+Jan 24 12:43:01 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 46.66 ms (1)
+Jan 24 12:43:01 symfony [info] {sfWebResponse} Send content (34108 o)
+Jan 24 12:46:15 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 12:46:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:46:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:46:15 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 12:46:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:46:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 12:46:15 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 12:46:15 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:46:15 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:46:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:46:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:46:15 symfony [info] {sfWebDebugLogger} Configuration 3.49 ms (9)
+Jan 24 12:46:15 symfony [info] {sfWebDebugLogger} Factories 86.71 ms (1)
+Jan 24 12:46:15 symfony [info] {sfWebDebugLogger} Action "job/index" 92.03 ms (1)
+Jan 24 12:46:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.19 ms (2)
+Jan 24 12:46:15 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 31.99 ms (1)
+Jan 24 12:46:15 symfony [info] {sfWebResponse} Send content (34301 o)
+Jan 24 12:46:23 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Jan 24 12:46:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:46:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:46:23 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Jan 24 12:46:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:46:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id = ?) LIMIT 1 - (1)
+Jan 24 12:46:24 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/showSuccess.php"
+Jan 24 12:46:24 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:46:24 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:46:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:46:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:46:24 symfony [info] {sfWebDebugLogger} Configuration 4.00 ms (9)
+Jan 24 12:46:24 symfony [info] {sfWebDebugLogger} Factories 78.25 ms (1)
+Jan 24 12:46:24 symfony [info] {sfWebDebugLogger} Action "job/show" 434.69 ms (1)
+Jan 24 12:46:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 301.69 ms (2)
+Jan 24 12:46:24 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 59.86 ms (1)
+Jan 24 12:46:24 symfony [info] {sfWebResponse} Send content (35809 o)
+Jan 24 12:46:33 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 12:46:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:46:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:46:33 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 12:46:34 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:46:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 12:46:34 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 12:46:34 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:46:34 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:46:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:46:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:46:34 symfony [info] {sfWebDebugLogger} Configuration 4.43 ms (9)
+Jan 24 12:46:34 symfony [info] {sfWebDebugLogger} Factories 98.63 ms (1)
+Jan 24 12:46:34 symfony [info] {sfWebDebugLogger} Action "job/index" 108.90 ms (1)
+Jan 24 12:46:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.28 ms (2)
+Jan 24 12:46:34 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 61.72 ms (1)
+Jan 24 12:46:34 symfony [info] {sfWebResponse} Send content (34271 o)
+Jan 24 12:49:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 12:49:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:49:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:49:05 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 12:49:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:49:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 12:49:05 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 12:49:05 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:49:05 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:49:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:49:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:49:05 symfony [info] {sfWebDebugLogger} Configuration 3.57 ms (9)
+Jan 24 12:49:05 symfony [info] {sfWebDebugLogger} Factories 90.66 ms (1)
+Jan 24 12:49:05 symfony [info] {sfWebDebugLogger} Action "job/index" 90.95 ms (1)
+Jan 24 12:49:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.38 ms (2)
+Jan 24 12:49:05 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 48.98 ms (1)
+Jan 24 12:49:05 symfony [info] {sfWebResponse} Send content (34302 o)
+Jan 24 12:49:11 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Jan 24 12:49:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:49:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:49:11 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Jan 24 12:49:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:49:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id = ?) LIMIT 1 - (1)
+Jan 24 12:49:11 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/showSuccess.php"
+Jan 24 12:49:11 symfony [notice] {sfWebDebugLogger}  Notice at /home/liveprojects/stackend/apps/frontend/modules/job/templates/showSuccess.php on line 5 (Undefined variable: job)
+Jan 24 12:54:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Jan 24 12:54:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:54:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:54:52 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Jan 24 12:54:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:54:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id = ?) LIMIT 1 - (1)
+Jan 24 12:54:52 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/showSuccess.php"
+Jan 24 12:54:52 symfony [notice] {sfWebDebugLogger}  Notice at /home/liveprojects/stackend/apps/frontend/modules/job/templates/showSuccess.php on line 5 (Undefined variable: job)
+Jan 24 12:54:57 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 12:54:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:54:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:54:57 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 12:54:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:54:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 12:54:57 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 12:54:58 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:54:58 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:54:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:54:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:54:58 symfony [info] {sfWebDebugLogger} Configuration 4.36 ms (9)
+Jan 24 12:54:58 symfony [info] {sfWebDebugLogger} Factories 76.99 ms (1)
+Jan 24 12:54:58 symfony [info] {sfWebDebugLogger} Action "job/index" 112.58 ms (1)
+Jan 24 12:54:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.59 ms (2)
+Jan 24 12:54:58 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 41.94 ms (1)
+Jan 24 12:54:58 symfony [info] {sfWebResponse} Send content (34271 o)
+Jan 24 12:55:01 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/2 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '2',)
+Jan 24 12:55:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:55:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:55:01 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Jan 24 12:55:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:55:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id = ?) LIMIT 1 - (2)
+Jan 24 12:55:01 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/showSuccess.php"
+Jan 24 12:55:01 symfony [notice] {sfWebDebugLogger}  Notice at /home/liveprojects/stackend/apps/frontend/modules/job/templates/showSuccess.php on line 5 (Undefined variable: job)
+Jan 24 12:58:41 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 24 12:58:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:58:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:58:41 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 24 12:58:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:58:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s - ()
+Jan 24 12:58:41 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Jan 24 12:58:41 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:58:41 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:58:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:58:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:58:41 symfony [info] {sfWebDebugLogger} Configuration 5.60 ms (9)
+Jan 24 12:58:41 symfony [info] {sfWebDebugLogger} Factories 114.93 ms (1)
+Jan 24 12:58:41 symfony [info] {sfWebDebugLogger} Action "job/index" 109.83 ms (1)
+Jan 24 12:58:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.29 ms (2)
+Jan 24 12:58:41 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 41.73 ms (1)
+Jan 24 12:58:41 symfony [info] {sfWebResponse} Send content (34271 o)
+Jan 24 12:58:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+Jan 24 12:58:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 24 12:58:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 24 12:58:46 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Jan 24 12:58:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 24 12:58:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id = ?) LIMIT 1 - (1)
+Jan 24 12:58:46 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/showSuccess.php"
+Jan 24 12:58:47 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:58:47 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 24 12:58:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 24 12:58:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 24 12:58:47 symfony [info] {sfWebDebugLogger} Configuration 3.88 ms (9)
+Jan 24 12:58:47 symfony [info] {sfWebDebugLogger} Factories 97.55 ms (1)
+Jan 24 12:58:47 symfony [info] {sfWebDebugLogger} Action "job/show" 303.07 ms (1)
+Jan 24 12:58:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.56 ms (2)
+Jan 24 12:58:47 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 53.64 ms (1)
+Jan 24 12:58:47 symfony [info] {sfWebResponse} Send content (35099 o)
