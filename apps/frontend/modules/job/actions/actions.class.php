@@ -5,22 +5,19 @@
  *
  * @package    stackend
  * @subpackage job
- * @author     Your name here
+ * @author     Tsotetsi Thapelo
  * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
 class jobActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $this->stackend_jobs = Doctrine_Core::getTable('StackendJob')
-      ->createQuery('a')
-      ->execute();
+	$this->categories = Doctrine_Core::getTable('StackendCategory')->getWithJobs();
   }
 
   public function executeShow(sfWebRequest $request)
   {
-    $this->job = Doctrine_Core::getTable('StackendJob')->find(array($request->getParameter('id')));
-    $this->forward404Unless($this->job);
+    $this->job = $this->getRoute()->getObject();
   }
 
   public function executeNew(sfWebRequest $request)

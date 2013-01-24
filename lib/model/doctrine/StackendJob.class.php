@@ -7,9 +7,34 @@
  * 
  * @package    stackend
  * @subpackage model
- * @author     Your name here
+ * @author     Thapelo Tsotetsi
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 class StackendJob extends BaseStackendJob
 {
+	public function getCompanySlug()
+	{
+		return Stackend::slugify($this->getCompany());
+	}
+ 
+	public function getPositionSlug()
+	{
+		return Stackend::slugify($this->getPosition());
+	}
+ 
+	public function getLocationSlug()
+	{
+		return Stackend::slugify($this->getLocation());
+	}
+	
+	public function save(Doctrine_Connection $conn = null)
+	{
+		if ($this->isNew() && !$this->getExpiresAt())
+		{
+			$now = $this->getCreatedAt() ? $this->getDateTimeObject('created_at')->format('U') : time();
+			$this->setExpiresAt(date('Y-m-d H:i:s', $now + 86400 * sfConfig::get('app_active_days')));
+		}
+		return parent::save($conn);
+	}
+
 }

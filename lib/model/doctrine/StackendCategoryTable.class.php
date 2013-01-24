@@ -16,4 +16,13 @@ class StackendCategoryTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('StackendCategory');
     }
+    
+    public function getWithJobs()
+	{
+		$q = $this->createQuery('c')
+			->leftJoin('c.StackendJobs j')
+			->where('j.expires_at > ?', date('Y-m-d H:i:s', time()));
+ 
+		return $q->execute();
+	}
 }
