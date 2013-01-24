@@ -22,8 +22,4 @@ class StackendCategory extends BaseStackendCategory
 		return Doctrine_Core::getTable('StackendJob')->getActiveJobs($q);
 	}
 	
-	public function getSlug()
-	{
-		return Stackend::slugify($this->getName());
-	}
 }
