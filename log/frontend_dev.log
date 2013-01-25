@@ -2623,3 +2623,116 @@ Jan 25 09:00:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 123.99 ms 
 Jan 25 09:00:37 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 285.81 ms (1)
 Jan 25 09:00:37 symfony [info] {sfWebDebugLogger} Partial "job/_list" 108.06 ms (1)
 Jan 25 09:00:37 symfony [info] {sfWebResponse} Send content (46210 o)
+Jan 25 09:42:45 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/programming with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'programming',)
+Jan 25 09:42:45 symfony [info] {myUser} Automatic user logout due to timeout
+Jan 25 09:42:45 symfony [info] {myUser} User is not authenticated
+Jan 25 09:42:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 25 09:42:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 25 09:42:45 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+Jan 25 09:42:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 25 09:42:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug FROM stackend_category s WHERE (s.slug = ?) - (programming)
+Jan 25 09:42:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM stackend_job s WHERE s.category_id = ? AND s.expires_at > ? - (2, 2013-01-25 09:42:45)
+Jan 25 09:42:45 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/category/templates/showSuccess.php"
+Jan 25 09:42:45 symfony [info] {main} Set slot "title"
+Jan 25 09:42:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.category_id = ? AND s.expires_at > ?) ORDER BY s.created_at DESC LIMIT 20 - (2, 2013-01-25 09:42:45)
+Jan 25 09:42:45 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_list.php"
+Jan 25 09:42:46 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 25 09:42:46 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 25 09:42:46 symfony [info] {main} Get slot "title"
+Jan 25 09:42:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 25 09:42:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 25 09:42:46 symfony [info] {sfWebDebugLogger} Configuration 313.74 ms (9)
+Jan 25 09:42:46 symfony [info] {sfWebDebugLogger} Factories 316.88 ms (1)
+Jan 25 09:42:46 symfony [info] {sfWebDebugLogger} Action "category/show" 137.73 ms (1)
+Jan 25 09:42:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.86 ms (4)
+Jan 25 09:42:46 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 138.16 ms (1)
+Jan 25 09:42:46 symfony [info] {sfWebDebugLogger} Partial "job/_list" 53.49 ms (1)
+Jan 25 09:42:46 symfony [info] {sfWebResponse} Send content (47146 o)
+Jan 25 13:58:17 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/programming with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'programming',)
+Jan 25 13:58:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 25 13:58:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 25 13:58:17 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+Jan 25 13:58:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 25 13:58:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug FROM stackend_category s WHERE (s.slug = ?) - (programming)
+Jan 25 13:58:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM stackend_job s WHERE s.category_id = ? AND s.expires_at > ? - (2, 2013-01-25 13:58:17)
+Jan 25 13:58:17 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/category/templates/showSuccess.php"
+Jan 25 13:58:18 symfony [info] {main} Set slot "title"
+Jan 25 13:58:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.category_id = ? AND s.expires_at > ?) ORDER BY s.created_at DESC LIMIT 20 - (2, 2013-01-25 13:58:17)
+Jan 25 13:58:18 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_list.php"
+Jan 25 13:58:18 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 25 13:58:18 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 25 13:58:18 symfony [info] {main} Get slot "title"
+Jan 25 13:58:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 25 13:58:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 25 13:58:18 symfony [info] {sfWebDebugLogger} Configuration 72.09 ms (10)
+Jan 25 13:58:18 symfony [info] {sfWebDebugLogger} Factories 299.95 ms (1)
+Jan 25 13:58:18 symfony [info] {sfWebDebugLogger} Action "category/show" 685.97 ms (1)
+Jan 25 13:58:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 119.99 ms (4)
+Jan 25 13:58:18 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 302.71 ms (1)
+Jan 25 13:58:18 symfony [info] {sfWebDebugLogger} Partial "job/_list" 100.37 ms (1)
+Jan 25 13:58:18 symfony [info] {sfWebResponse} Send content (46211 o)
+Jan 25 14:01:29 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/programming with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'programming',)
+Jan 25 14:01:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 25 14:01:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 25 14:01:29 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+Jan 25 14:01:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 25 14:01:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug FROM stackend_category s WHERE (s.slug = ?) - (programming)
+Jan 25 14:01:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM stackend_job s WHERE s.category_id = ? AND s.expires_at > ? - (2, 2013-01-25 14:01:30)
+Jan 25 14:01:30 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/category/templates/showSuccess.php"
+Jan 25 14:01:30 symfony [info] {main} Set slot "title"
+Jan 25 14:01:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.category_id = ? AND s.expires_at > ?) ORDER BY s.created_at DESC LIMIT 20 - (2, 2013-01-25 14:01:30)
+Jan 25 14:01:30 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_list.php"
+Jan 25 14:01:30 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 25 14:01:30 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 25 14:01:30 symfony [info] {main} Get slot "title"
+Jan 25 14:01:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 25 14:01:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 25 14:01:30 symfony [info] {sfWebDebugLogger} Configuration 3.45 ms (9)
+Jan 25 14:01:30 symfony [info] {sfWebDebugLogger} Factories 92.07 ms (1)
+Jan 25 14:01:30 symfony [info] {sfWebDebugLogger} Action "category/show" 140.17 ms (1)
+Jan 25 14:01:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.57 ms (4)
+Jan 25 14:01:30 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 125.27 ms (1)
+Jan 25 14:01:30 symfony [info] {sfWebDebugLogger} Partial "job/_list" 55.99 ms (1)
+Jan 25 14:01:30 symfony [info] {sfWebResponse} Send content (46434 o)
+Jan 25 14:01:33 symfony [info] {sfPatternRouting} Match route "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug) for /job/company-116/paris-france/20/web-developer with parameters array (  'module' => 'job',  'action' => 'show',  'company_slug' => 'company-116',  'location_slug' => 'paris-france',  'id' => '20',  'position_slug' => 'web-developer',)
+Jan 25 14:01:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 25 14:01:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 25 14:01:33 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Jan 25 14:01:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 25 14:01:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id = ? AND s.expires_at > ?) ORDER BY s.created_at DESC - (20, 2013-01-25 14:01:33)
+Jan 25 14:01:33 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/showSuccess.php"
+Jan 25 14:01:33 symfony [info] {main} Set slot "title"
+Jan 25 14:01:33 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 25 14:01:33 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 25 14:01:33 symfony [info] {main} Get slot "title"
+Jan 25 14:01:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 25 14:01:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 25 14:01:33 symfony [info] {sfWebDebugLogger} Configuration 73.47 ms (10)
+Jan 25 14:01:33 symfony [info] {sfWebDebugLogger} Factories 80.99 ms (1)
+Jan 25 14:01:33 symfony [info] {sfWebDebugLogger} Action "job/show" 108.84 ms (1)
+Jan 25 14:01:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.37 ms (2)
+Jan 25 14:01:33 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 81.60 ms (1)
+Jan 25 14:01:34 symfony [info] {sfWebResponse} Send content (36089 o)
+Jan 25 14:12:12 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/programming with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'programming',)
+Jan 25 14:12:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 25 14:12:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 25 14:12:12 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+Jan 25 14:12:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 25 14:12:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug FROM stackend_category s WHERE (s.slug = ?) - (programming)
+Jan 25 14:12:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM stackend_job s WHERE s.category_id = ? AND s.expires_at > ? - (2, 2013-01-25 14:12:12)
+Jan 25 14:12:12 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/category/templates/showSuccess.php"
+Jan 25 14:12:12 symfony [info] {main} Set slot "title"
+Jan 25 14:12:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.category_id = ? AND s.expires_at > ?) ORDER BY s.created_at DESC LIMIT 20 - (2, 2013-01-25 14:12:12)
+Jan 25 14:12:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_list.php"
+Jan 25 14:12:12 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 25 14:12:12 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 25 14:12:12 symfony [info] {main} Get slot "title"
+Jan 25 14:12:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 25 14:12:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 25 14:12:12 symfony [info] {sfWebDebugLogger} Configuration 4.28 ms (9)
+Jan 25 14:12:12 symfony [info] {sfWebDebugLogger} Factories 89.55 ms (1)
+Jan 25 14:12:12 symfony [info] {sfWebDebugLogger} Action "category/show" 141.11 ms (1)
+Jan 25 14:12:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 6.45 ms (4)
+Jan 25 14:12:12 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 134.08 ms (1)
+Jan 25 14:12:12 symfony [info] {sfWebDebugLogger} Partial "job/_list" 61.09 ms (1)
+Jan 25 14:12:12 symfony [info] {sfWebResponse} Send content (46434 o)

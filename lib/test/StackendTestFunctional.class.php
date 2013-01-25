@@ -1,5 +1,5 @@
 <?php
-class StackendTestFunctional extends sfTestFunctional
+class JobeetTestFunctional extends sfTestFunctional
 {
   public function loadData()
   {
@@ -29,3 +29,4 @@ class StackendTestFunctional extends sfTestFunctional
     return $q->fetchOne();
   }
 }
+

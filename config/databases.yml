@@ -5,3 +5,10 @@ all:
       dsn: 'mysql:host=127.0.0.1;dbname=stackend'
       username: root
       password: null
+test:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=127.0.0.1;dbname=stackend_test'
+      username: root
+      password: null
