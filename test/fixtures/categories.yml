@@ -1,0 +1,10 @@
+StackendCategory:
+  design:
+    name: Design
+  programming:
+    name: Programming
+  manager:
+    name: Manager
+  administrator:
+    name: Administrator
+ 
