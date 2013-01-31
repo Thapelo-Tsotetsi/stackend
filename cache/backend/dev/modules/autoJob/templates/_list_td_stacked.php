@@ -1,0 +1,3 @@
+<td colspan="6">
+  <?php echo __('%%is_activated%% <small>%%StackendCategory%%</small> - %%company%% (<em>%%email%%</em>) is looking for a %%position%% (%%location%%)', array('%%is_activated%%' => get_partial('job/list_field_boolean', array('value' => $stackend_job->getIsActivated())), '%%StackendCategory%%' => $stackend_job->getStackendCategory(), '%%company%%' => $stackend_job->getCompany(), '%%email%%' => $stackend_job->getEmail(), '%%position%%' => link_to($stackend_job->getPosition(), 'stackend_job_edit', $stackend_job), '%%location%%' => $stackend_job->getLocation()), 'messages') ?>
+</td>

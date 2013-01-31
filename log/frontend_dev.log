@@ -3407,3 +3407,23 @@ Jan 31 16:25:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 11.06 ms (
 Jan 31 16:25:19 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 182.91 ms (1)
 Jan 31 16:25:19 symfony [info] {sfWebDebugLogger} Partial "job/_list" 39.70 ms (2)
 Jan 31 16:25:19 symfony [info] {sfWebResponse} Send content (51414 o)
+Jan 31 18:06:36 symfony [info] {sfPatternRouting} Match route "job_new" (/job/new.:sf_format) for /job/new with parameters array (  'module' => 'job',  'action' => 'new',  'sf_format' => 'html',)
+Jan 31 18:06:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 31 18:06:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 31 18:06:36 symfony [info] {jobActions} Call "jobActions->executeNew()"
+Jan 31 18:06:36 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/newSuccess.php"
+Jan 31 18:06:36 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_form.php"
+Jan 31 18:06:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 31 18:06:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug FROM stackend_category s - ()
+Jan 31 18:06:36 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 31 18:06:36 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 31 18:06:36 symfony [info] {main} Get slot "title"
+Jan 31 18:06:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 31 18:06:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 31 18:06:36 symfony [info] {sfWebDebugLogger} Configuration 377.67 ms (9)
+Jan 31 18:06:36 symfony [info] {sfWebDebugLogger} Factories 307.06 ms (1)
+Jan 31 18:06:36 symfony [info] {sfWebDebugLogger} Action "job/new" 113.76 ms (1)
+Jan 31 18:06:36 symfony [info] {sfWebDebugLogger} View "Success" for "job/new" 146.42 ms (1)
+Jan 31 18:06:36 symfony [info] {sfWebDebugLogger} Partial "job/_form" 94.55 ms (1)
+Jan 31 18:06:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.07 ms (2)
+Jan 31 18:06:36 symfony [info] {sfWebResponse} Send content (43418 o)

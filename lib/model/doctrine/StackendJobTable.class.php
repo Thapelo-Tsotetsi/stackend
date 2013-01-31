@@ -67,4 +67,14 @@ class StackendJobTable extends Doctrine_Table
  
 		return $q->execute();
 	}
+	
+
+	public function retrieveBackendJobList(Doctrine_Query $q)
+	{
+		$rootAlias = $q->getRootAlias();
+ 
+		$q->leftJoin($rootAlias . '.StackendCategory c');
+ 
+		return $q;
+	}	
 }
