@@ -3275,3 +3275,64 @@ Jan 31 09:56:52 symfony [info] {sfWebDebugLogger} Action "job/show" 131.47 ms (1
 Jan 31 09:56:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.85 ms (2)
 Jan 31 09:56:52 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 39.32 ms (1)
 Jan 31 09:56:52 symfony [info] {sfWebResponse} Send content (36726 o)
+Jan 31 10:14:13 symfony [info] {sfPatternRouting} Match route "job_edit" (/job/:token/edit.:sf_format) for /job/job_extreme_sensio/edit with parameters array (  'module' => 'job',  'action' => 'edit',  'sf_format' => 'html',  'token' => 'job_extreme_sensio',)
+Jan 31 10:14:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 31 10:14:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 31 10:14:13 symfony [info] {jobActions} Call "jobActions->executeEdit()"
+Jan 31 10:14:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 31 10:14:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.token = ?) - (job_extreme_sensio)
+Jan 31 10:14:14 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/editSuccess.php"
+Jan 31 10:14:14 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_form.php"
+Jan 31 10:14:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug FROM stackend_category s - ()
+Jan 31 10:14:14 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 31 10:14:14 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 31 10:14:14 symfony [info] {main} Get slot "title"
+Jan 31 10:14:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 31 10:14:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 31 10:14:14 symfony [info] {sfWebDebugLogger} Configuration 536.42 ms (9)
+Jan 31 10:14:14 symfony [info] {sfWebDebugLogger} Factories 419.63 ms (1)
+Jan 31 10:14:14 symfony [info] {sfWebDebugLogger} Action "job/edit" 689.60 ms (1)
+Jan 31 10:14:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 123.28 ms (3)
+Jan 31 10:14:14 symfony [info] {sfWebDebugLogger} View "Success" for "job/edit" 189.49 ms (1)
+Jan 31 10:14:14 symfony [info] {sfWebDebugLogger} Partial "job/_form" 51.63 ms (1)
+Jan 31 10:14:14 symfony [info] {sfWebResponse} Send content (47478 o)
+Jan 31 10:14:20 symfony [info] {sfPatternRouting} Match route "job_update" (/job/:token.:sf_format) for /job/job_extreme_sensio with parameters array (  'module' => 'job',  'action' => 'update',  'sf_format' => 'html',  'token' => 'job_extreme_sensio',)
+Jan 31 10:14:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 31 10:14:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 31 10:14:21 symfony [info] {jobActions} Call "jobActions->executeUpdate()"
+Jan 31 10:14:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 31 10:14:21 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.token = ?) - (job_extreme_sensio)
+Jan 31 10:14:21 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM stackend_category s WHERE s.id = ? - (1)
+Jan 31 10:14:21 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.token = ?) - (job_extreme_sensio)
+Jan 31 10:14:21 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE stackend_job SET description = ?, how_to_apply = ?, updated_at = ? WHERE id = ? - ([0.45Kb], Send your resume to fabien.potencier [at] sensio.com
+, 2013-01-31 10:14:21, 2)
+Jan 31 10:14:21 symfony [info] {sfFrontWebController} Redirect to "http://127.0.0.1:8090/frontend_dev.php/job/job_extreme_sensio"
+Jan 31 10:14:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jan 31 10:14:21 symfony [info] {sfWebResponse} Send header "Location: http://127.0.0.1:8090/frontend_dev.php/job/job_extreme_sensio"
+Jan 31 10:14:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 31 10:14:21 symfony [info] {sfWebDebugLogger} Configuration 3.93 ms (8)
+Jan 31 10:14:21 symfony [info] {sfWebDebugLogger} Factories 104.98 ms (1)
+Jan 31 10:14:21 symfony [info] {sfWebDebugLogger} Action "job/update" 754.72 ms (1)
+Jan 31 10:14:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 328.90 ms (5)
+Jan 31 10:14:21 symfony [info] {sfWebResponse} Send content (132 o)
+Jan 31 10:14:22 symfony [info] {sfPatternRouting} Match route "job_show" (/job/:token.:sf_format) for /job/job_extreme_sensio with parameters array (  'module' => 'job',  'action' => 'show',  'sf_format' => 'html',  'token' => 'job_extreme_sensio',)
+Jan 31 10:14:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 31 10:14:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 31 10:14:22 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Jan 31 10:14:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 31 10:14:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.token = ?) - (job_extreme_sensio)
+Jan 31 10:14:22 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/showSuccess.php"
+Jan 31 10:14:22 symfony [info] {main} Set slot "title"
+Jan 31 10:14:22 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_admin.php"
+Jan 31 10:14:22 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 31 10:14:22 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Jan 31 10:14:22 symfony [info] {main} Get slot "title"
+Jan 31 10:14:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 31 10:14:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 31 10:14:22 symfony [info] {sfWebDebugLogger} Configuration 3.98 ms (9)
+Jan 31 10:14:22 symfony [info] {sfWebDebugLogger} Factories 94.40 ms (1)
+Jan 31 10:14:22 symfony [info] {sfWebDebugLogger} Action "job/show" 115.28 ms (1)
+Jan 31 10:14:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.24 ms (2)
+Jan 31 10:14:22 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 114.92 ms (1)
+Jan 31 10:14:22 symfony [info] {sfWebDebugLogger} Partial "job/_admin" 19.86 ms (1)
+Jan 31 10:14:22 symfony [info] {sfWebResponse} Send content (38189 o)
