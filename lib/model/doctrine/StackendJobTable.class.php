@@ -25,10 +25,6 @@ class StackendJobTable extends Doctrine_Table
     return self::$types;
   }
      
-     
-     
-     
-     
 	public function retrieveActiveJob(Doctrine_Query $q)
 	{
 		return $this->addActiveJobsQuery($q)->fetchOne();
@@ -61,4 +57,14 @@ class StackendJobTable extends Doctrine_Table
  
 		return $q;
    }
+   
+	public function cleanup($days)
+	{
+		$q = $this->createQuery('a')
+			->delete()
+			->andWhere('a.is_activated = ?', 0)
+			->andWhere('a.created_at < ?', date('Y-m-d', time() - 86400 * $days));
+ 
+		return $q->execute();
+	}
 }
