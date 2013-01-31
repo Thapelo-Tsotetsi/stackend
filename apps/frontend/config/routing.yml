@@ -9,7 +9,12 @@ category:
 
 job:
   class:   sfDoctrineRouteCollection
-  options: { model: StackendJob }
+  options:
+    model:          StackendJob
+    column:         token
+    object_actions: { publish: put }
+  requirements:
+    token: \w+
  
 job_show_user:
   url:     /job/:company_slug/:location_slug/:id/:position_slug

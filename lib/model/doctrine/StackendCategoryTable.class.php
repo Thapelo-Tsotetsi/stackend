@@ -22,6 +22,8 @@ class StackendCategoryTable extends Doctrine_Table
 		$q = $this->createQuery('c')
 			->leftJoin('c.StackendJobs j')
 			->where('j.expires_at > ?', date('Y-m-d H:i:s', time()));
+		
+		$q->andWhere('j.is_activated = ?', 1);
  
 		return $q->execute();
 	}

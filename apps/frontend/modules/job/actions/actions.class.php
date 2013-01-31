@@ -22,12 +22,13 @@ class jobActions extends sfActions
 
   public function executeNew(sfWebRequest $request)
   {
-    $this->form = new StackendJobForm();
+	$job = new StackendJob();
+	$job->setType('full-time');
+	$this->form = new StackendJobForm($job);
   }
 
   public function executeCreate(sfWebRequest $request)
   {
-    $this->forward404Unless($request->isMethod(sfRequest::POST));
 
     $this->form = new StackendJobForm();
 
@@ -38,39 +39,46 @@ class jobActions extends sfActions
 
   public function executeEdit(sfWebRequest $request)
   {
-    $this->forward404Unless($stackend_job = Doctrine_Core::getTable('StackendJob')->find(array($request->getParameter('id'))), sprintf('Object stackend_job does not exist (%s).', $request->getParameter('id')));
-    $this->form = new StackendJobForm($stackend_job);
+	$this->form = new StackendJobForm($this->getRoute()->getObject());
   }
 
   public function executeUpdate(sfWebRequest $request)
   {
-    $this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
-    $this->forward404Unless($stackend_job = Doctrine_Core::getTable('StackendJob')->find(array($request->getParameter('id'))), sprintf('Object stackend_job does not exist (%s).', $request->getParameter('id')));
-    $this->form = new StackendJobForm($stackend_job);
-
-    $this->processForm($request, $this->form);
-
-    $this->setTemplate('edit');
+	$this->form = new StackendJobForm($this->getRoute()->getObject());
+	$this->processForm($request, $this->form);
+	$this->setTemplate('edit');
   }
 
   public function executeDelete(sfWebRequest $request)
   {
-    $request->checkCSRFProtection();
-
-    $this->forward404Unless($stackend_job = Doctrine_Core::getTable('StackendJob')->find(array($request->getParameter('id'))), sprintf('Object stackend_job does not exist (%s).', $request->getParameter('id')));
-    $stackend_job->delete();
-
-    $this->redirect('job/index');
+	$request->checkCSRFProtection();
+ 
+	$job = $this->getRoute()->getObject();
+	$job->delete();
+ 
+	$this->redirect('job/index');
   }
 
   protected function processForm(sfWebRequest $request, sfForm $form)
   {
-    $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
-    if ($form->isValid())
-    {
-      $stackend_job = $form->save();
-
-      $this->redirect('job/edit?id='.$stackend_job->getId());
-    }
+	$form->bind(
+		$request->getParameter($form->getName()),
+		$request->getFiles($form->getName())
+		);
+ 
+	if ($form->isValid())
+	{
+		$job = $form->save();
+		$this->redirect('job_show', $job);
+	}
   }
+  
+	public function executePublish(sfWebRequest $request)
+	{
+		$request->checkCSRFProtection();
+		$job = $this->getRoute()->getObject();
+		$job->publish();
+		$this->getUser()->setFlash('notice', sprintf('Your job is now online for %s days.', sfConfig::get('app_active_days')));
+		$this->redirect('job_show_user', $job);
+	}
 }
