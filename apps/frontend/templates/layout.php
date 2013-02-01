@@ -5,10 +5,13 @@
 	<title>
 		<?php include_slot('title', 'Stackend - Your best job board') ?>
 	</title>
+	<link rel="alternate" type="application/atom+xml" title="Latest Jobs"
+  href="<?php echo url_for('job', array('sf_format' => 'atom'), true) ?>" />
 	
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_javascripts() ?>
     <?php include_stylesheets() ?>
+    
   </head>
   <body>
     <div id="container">
@@ -98,7 +101,7 @@
           </span>
           <ul>
             <li><a href="">About Stackend</a></li>
-            <li class="feed"><a href="">Full feed</a></li>
+				<li class="feed"><a href="<?php echo url_for('job', array('sf_format' => 'atom')) ?>">Full feed</a></li>
             <li><a href="">Stackend API</a></li>
             <li class="last"><a href="">Affiliates</a></li>
           </ul>
