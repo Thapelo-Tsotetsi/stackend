@@ -21,4 +21,18 @@ class StackendAffiliate extends BaseStackendAffiliate
  
 		return parent::save($conn);
 	}
+	
+  public function activate()
+  {
+    $this->setIsActive(true);
+ 
+    return $this->save();
+  }
+ 
+  public function deactivate()
+  {
+    $this->setIsActive(false);
+ 
+    return $this->save();
+  }
 }
