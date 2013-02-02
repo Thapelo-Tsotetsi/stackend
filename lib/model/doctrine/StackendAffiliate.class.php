@@ -7,9 +7,18 @@
  * 
  * @package    stackend
  * @subpackage model
- * @author     Your name here
+ * @author     Thapelo Tsotetsi
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 class StackendAffiliate extends BaseStackendAffiliate
 {
+	public function save(Doctrine_Connection $conn = null)
+	{
+		if (!$this->getToken())
+		{
+			$this->setToken(sha1($this->getEmail().rand(11111, 99999)));
+		}
+ 
+		return parent::save($conn);
+	}
 }

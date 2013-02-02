@@ -30,10 +30,7 @@ class StackendJobTable extends Doctrine_Table
 		return $this->addActiveJobsQuery($q)->fetchOne();
 	}
  
-	public function getActiveJobs(Doctrine_Query $q = null)
-	{
-		return $this->addActiveJobsQuery($q)->execute();
-	}
+
  
 	public function countActiveJobs(Doctrine_Query $q = null)
 	{
@@ -85,5 +82,31 @@ class StackendJobTable extends Doctrine_Table
 		$this->addActiveJobsQuery($q);
  
 		return $q->fetchOne();
-	}	
+	}
+	
+	public function getForToken(array $parameters)
+	{
+		$affiliate = Doctrine_Core::getTable('StackendAffiliate') ->findOneByToken($parameters['token']);
+		if (!$affiliate || !$affiliate->getIsActive())
+		{
+			throw new sfError404Exception(sprintf('Affiliate with token "%s" does not exist or is not activated.', $parameters['token']));
+		}
+ 
+		return $affiliate->getActiveJobs();
+	}
+	
+	public function getActiveJobs()
+	{
+		$q = Doctrine_Query::create()
+			->select('j.*')
+			->from('StackendJob j')
+			->leftJoin('j.StackendCategory c')
+			->leftJoin('c.StackendAffiliates a')
+			->where('a.id = ?', $this->getId());
+ 
+		$q = Doctrine_Core::getTable('StackendJob')->addActiveJobsQuery($q);
+ 
+		return $q->execute();
+	}
+	
 }
