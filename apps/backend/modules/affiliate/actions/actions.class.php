@@ -13,9 +13,26 @@ require_once dirname(__FILE__).'/../lib/affiliateGeneratorHelper.class.php';
  */
 class affiliateActions extends autoAffiliateActions
 {
-	  public function executeListActivate()
+  public function executeListActivate()
   {
-    $this->getRoute()->getObject()->activate();
+    $affiliate = $this->getRoute()->getObject();
+    $affiliate->activate();
+ 
+    // send an email to the affiliate
+    $message = $this->getMailer()->compose(
+      array('info@stackend.com' => 'Stackend Bot'),
+      $affiliate->getEmail(),
+      'Stackend affiliate token',
+      <<<EOF
+Your Stackend affiliate account has been activated.
+ 
+Your token is {$affiliate->getToken()}.
+ 
+The Stackend Bot.
+EOF
+    );
+ 
+    $this->getMailer()->send($message);
  
     $this->redirect('stackend_affiliate');
   }

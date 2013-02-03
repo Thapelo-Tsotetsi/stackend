@@ -13,6 +13,14 @@ test:
     class: sfSessionTestStorage
     param:
       session_path: %SF_TEST_CACHE_DIR%/sessions
+  transport:
+    class:  Swift_MailTransport
+    param:
+      host:       localhost
+      port:       25
+      encryption: ~
+      username:   ~
+      password:   ~
 
   response:
     class: sfWebResponse

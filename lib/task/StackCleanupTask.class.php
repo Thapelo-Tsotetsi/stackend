@@ -20,11 +20,33 @@ The [stackend:cleanup|INFO] task cleans up the Stackend database:
 EOF;
   }
  
-  protected function execute($arguments = array(), $options = array())
-  {
-    $databaseManager = new sfDatabaseManager($this->configuration);
- 
-    $nb = Doctrine_Core::getTable('StackendJob')->cleanup($options['days']);
-    $this->logSection('doctrine', sprintf('Removed %d stale jobs', $nb));
-  }
+	protected function execute($arguments = array(), $options = array())
+	{
+	  $databaseManager = new sfDatabaseManager($this->configuration);
+	 
+	  // cleanup Lucene index
+	  $index = StackendJobTable::getLuceneIndex();
+	 
+	  $q = Doctrine_Query::create()
+		->from('StackendJob j')
+		->where('j.expires_at < ?', date('Y-m-d'));
+	 
+	  $jobs = $q->execute();
+	  foreach ($jobs as $job)
+	  {
+		if ($hit = $index->find('pk:'.$job->getId()))
+		{
+		  $index->delete($hit->id);
+		}
+	  }
+	 
+	  $index->optimize();
+	 
+	  $this->logSection('lucene', 'Cleaned up and optimized the job index');
+	 
+	  // Remove stale jobs
+	  $nb = Doctrine_Core::getTable('StackendJob')->cleanup($options['days']);
+	 
+	  $this->logSection('doctrine', sprintf('Removed %d stale jobs', $nb));
+	}
 }
