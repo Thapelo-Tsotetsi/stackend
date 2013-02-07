@@ -54,7 +54,7 @@
  * 
  * @package    stackend
  * @subpackage model
- * @author     Your name here
+ * @author     Thapelo Tsotetsi
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BaseStackendJob extends sfDoctrineRecord

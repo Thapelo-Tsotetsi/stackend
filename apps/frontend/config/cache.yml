@@ -7,7 +7,7 @@ default:
   lifetime:    86400
 
 index:
-  enabled:     true
+  enabled:     false
   with_layout: true
   lifetime:    86400
   
