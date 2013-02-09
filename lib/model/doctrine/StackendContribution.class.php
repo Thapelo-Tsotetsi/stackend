@@ -12,4 +12,18 @@
  */
 class StackendContribution extends BaseStackendContribution
 {
+	public function getCompanySlug()
+	{
+		return Stackend::slugify($this->getCompany());
+	}
+ 
+	public function getPositionSlug()
+	{
+		return Stackend::slugify($this->getPosition());
+	}
+ 
+	public function getLocationSlug()
+	{
+		return Stackend::slugify($this->getLocation());
+	}
 }

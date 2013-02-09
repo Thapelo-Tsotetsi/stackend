@@ -14027,3 +14027,492 @@ Feb 09 15:34:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 18.25 ms (
 Feb 09 15:34:34 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 253.43 ms (1)
 Feb 09 15:34:34 symfony [info] {sfWebDebugLogger} Partial "job/_list" 48.82 ms (2)
 Feb 09 15:34:34 symfony [info] {sfWebResponse} Send content (56687 o)
+Feb 09 16:45:40 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:45:40 symfony [info] {myUser} Automatic user logout due to timeout
+Feb 09 16:45:40 symfony [info] {myUser} User is not authenticated
+Feb 09 16:45:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:45:40 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:45:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:45:40 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:45:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:45:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:45:41 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:45:41 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:45:41 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:45:41 symfony [info] {main} Get slot "title"
+Feb 09 16:45:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id IN (?, ?, ?)) - (31, 23, 30)
+Feb 09 16:45:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 09 16:45:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:45:41 symfony [info] {sfWebDebugLogger} Configuration 240.87 ms (11)
+Feb 09 16:45:41 symfony [info] {sfWebDebugLogger} Factories 543.83 ms (1)
+Feb 09 16:45:41 symfony [info] {sfWebDebugLogger} Action "contribution/index" 586.68 ms (1)
+Feb 09 16:45:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 64.51 ms (3)
+Feb 09 16:45:41 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 345.90 ms (1)
+Feb 09 16:45:41 symfony [info] {sfWebResponse} Send content (50017 o)
+Feb 09 16:46:31 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:46:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:46:31 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:46:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:46:31 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:46:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:46:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:46:31 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:46:31 symfony [err] {sfConfigurationException} Unable to find a matching route to generate url for params "array (  'action' => 'show',  'module' => 'contribution',  'id' => '1',)".
+Feb 09 16:46:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 09 16:46:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:46:32 symfony [info] {sfWebDebugLogger} Configuration 228.14 ms (11)
+Feb 09 16:46:32 symfony [info] {sfWebDebugLogger} Factories 330.15 ms (1)
+Feb 09 16:46:32 symfony [info] {sfWebDebugLogger} Action "contribution/index" 154.52 ms (1)
+Feb 09 16:46:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.14 ms (2)
+Feb 09 16:46:32 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 231.67 ms (1)
+Feb 09 16:47:54 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:47:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:47:54 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:47:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:47:54 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:47:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:47:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:47:54 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:47:54 symfony [err] {sfConfigurationException} Unable to find a matching route to generate url for params "array (  'action' => 'show',  'module' => 'contribution',  'id' => '1',)".
+Feb 09 16:47:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 09 16:47:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:47:54 symfony [info] {sfWebDebugLogger} Configuration 217.04 ms (11)
+Feb 09 16:47:54 symfony [info] {sfWebDebugLogger} Factories 325.63 ms (1)
+Feb 09 16:47:54 symfony [info] {sfWebDebugLogger} Action "contribution/index" 143.43 ms (1)
+Feb 09 16:47:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.07 ms (2)
+Feb 09 16:47:54 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 155.11 ms (1)
+Feb 09 16:49:13 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:49:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:49:13 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:49:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:49:13 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:49:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:49:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:49:13 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:49:14 symfony [err] {sfConfigurationException} Unable to find a matching route to generate url for params "array (  'action' => 'show',  'module' => 'contribution',  'id' => '1',)".
+Feb 09 16:49:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 09 16:49:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:49:14 symfony [info] {sfWebDebugLogger} Configuration 230.03 ms (11)
+Feb 09 16:49:14 symfony [info] {sfWebDebugLogger} Factories 339.22 ms (1)
+Feb 09 16:49:14 symfony [info] {sfWebDebugLogger} Action "contribution/index" 156.14 ms (1)
+Feb 09 16:49:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.53 ms (2)
+Feb 09 16:49:14 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 168.98 ms (1)
+Feb 09 16:49:18 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:49:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:49:18 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:49:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:49:18 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:49:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:49:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:49:18 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:49:18 symfony [err] {sfConfigurationException} Unable to find a matching route to generate url for params "array (  'action' => 'show',  'module' => 'contribution',  'id' => '1',)".
+Feb 09 16:49:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 09 16:49:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:49:19 symfony [info] {sfWebDebugLogger} Configuration 5.20 ms (10)
+Feb 09 16:49:19 symfony [info] {sfWebDebugLogger} Factories 122.98 ms (1)
+Feb 09 16:49:19 symfony [info] {sfWebDebugLogger} Action "contribution/index" 156.42 ms (1)
+Feb 09 16:49:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.66 ms (2)
+Feb 09 16:49:19 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 178.36 ms (1)
+Feb 09 16:49:26 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:49:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:49:26 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:49:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:49:26 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:49:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:49:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:49:26 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:49:26 symfony [err] {sfConfigurationException} Unable to find a matching route to generate url for params "array (  'action' => 'show',  'module' => 'contribution',  'id' => '1',)".
+Feb 09 16:49:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 09 16:49:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:49:26 symfony [info] {sfWebDebugLogger} Configuration 5.37 ms (10)
+Feb 09 16:49:26 symfony [info] {sfWebDebugLogger} Factories 117.51 ms (1)
+Feb 09 16:49:26 symfony [info] {sfWebDebugLogger} Action "contribution/index" 178.02 ms (1)
+Feb 09 16:49:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 10.10 ms (2)
+Feb 09 16:49:26 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 181.19 ms (1)
+Feb 09 16:49:27 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:49:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:49:27 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:49:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:49:27 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:49:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:49:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:49:27 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:49:28 symfony [err] {sfConfigurationException} Unable to find a matching route to generate url for params "array (  'action' => 'show',  'module' => 'contribution',  'id' => '1',)".
+Feb 09 16:49:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 09 16:49:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:49:28 symfony [info] {sfWebDebugLogger} Configuration 5.79 ms (10)
+Feb 09 16:49:28 symfony [info] {sfWebDebugLogger} Factories 135.74 ms (1)
+Feb 09 16:49:28 symfony [info] {sfWebDebugLogger} Action "contribution/index" 165.77 ms (1)
+Feb 09 16:49:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.05 ms (2)
+Feb 09 16:49:28 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 178.23 ms (1)
+Feb 09 16:49:28 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:49:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:49:28 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:49:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:49:28 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:49:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:49:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:49:29 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:49:29 symfony [err] {sfConfigurationException} Unable to find a matching route to generate url for params "array (  'action' => 'show',  'module' => 'contribution',  'id' => '1',)".
+Feb 09 16:49:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 09 16:49:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:49:29 symfony [info] {sfWebDebugLogger} Configuration 6.15 ms (10)
+Feb 09 16:49:29 symfony [info] {sfWebDebugLogger} Factories 132.36 ms (1)
+Feb 09 16:49:29 symfony [info] {sfWebDebugLogger} Action "contribution/index" 142.23 ms (1)
+Feb 09 16:49:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.12 ms (2)
+Feb 09 16:49:29 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 182.26 ms (1)
+Feb 09 16:49:34 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/contribution/" (/).
+Feb 09 16:49:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Feb 09 16:49:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:49:34 symfony [info] {sfWebDebugLogger} Configuration 2.75 ms (5)
+Feb 09 16:49:34 symfony [info] {sfWebDebugLogger} Factories 179.84 ms (1)
+Feb 09 16:49:39 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:49:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:49:39 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:49:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:49:39 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:49:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:49:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:49:39 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:49:39 symfony [err] {sfConfigurationException} Unable to find a matching route to generate url for params "array (  'action' => 'show',  'module' => 'contribution',  'id' => '1',)".
+Feb 09 16:49:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 09 16:49:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:49:39 symfony [info] {sfWebDebugLogger} Configuration 5.66 ms (10)
+Feb 09 16:49:39 symfony [info] {sfWebDebugLogger} Factories 135.73 ms (1)
+Feb 09 16:49:39 symfony [info] {sfWebDebugLogger} Action "contribution/index" 148.23 ms (1)
+Feb 09 16:49:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.46 ms (2)
+Feb 09 16:49:39 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 149.03 ms (1)
+Feb 09 16:50:32 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:50:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:50:32 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:50:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:50:32 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:50:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:50:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:50:32 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:50:32 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:50:32 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:50:32 symfony [info] {main} Get slot "title"
+Feb 09 16:50:32 symfony [err] {sfConfigurationException} The route "homepage" does not exist.
+Feb 09 16:50:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 09 16:50:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:50:33 symfony [info] {sfWebDebugLogger} Configuration 299.53 ms (11)
+Feb 09 16:50:33 symfony [info] {sfWebDebugLogger} Factories 421.93 ms (1)
+Feb 09 16:50:33 symfony [info] {sfWebDebugLogger} Action "contribution/index" 152.99 ms (1)
+Feb 09 16:50:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.39 ms (2)
+Feb 09 16:50:33 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 326.03 ms (1)
+Feb 09 16:51:19 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:51:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:51:19 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:51:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:51:19 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:51:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:51:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:51:19 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:51:19 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:51:19 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:51:19 symfony [info] {main} Get slot "title"
+Feb 09 16:51:19 symfony [err] {sfConfigurationException} The route "homepage" does not exist.
+Feb 09 16:51:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 09 16:51:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:51:20 symfony [info] {sfWebDebugLogger} Configuration 264.99 ms (11)
+Feb 09 16:51:20 symfony [info] {sfWebDebugLogger} Factories 385.72 ms (1)
+Feb 09 16:51:20 symfony [info] {sfWebDebugLogger} Action "contribution/index" 147.06 ms (1)
+Feb 09 16:51:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.72 ms (2)
+Feb 09 16:51:20 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 322.26 ms (1)
+Feb 09 16:51:22 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:51:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:51:22 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:51:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:51:22 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:51:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:51:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:51:22 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:51:23 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:51:23 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:51:23 symfony [info] {main} Get slot "title"
+Feb 09 16:51:23 symfony [err] {sfConfigurationException} The route "homepage" does not exist.
+Feb 09 16:51:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 09 16:51:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:51:23 symfony [info] {sfWebDebugLogger} Configuration 5.74 ms (10)
+Feb 09 16:51:23 symfony [info] {sfWebDebugLogger} Factories 132.55 ms (1)
+Feb 09 16:51:23 symfony [info] {sfWebDebugLogger} Action "contribution/index" 167.30 ms (1)
+Feb 09 16:51:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.17 ms (2)
+Feb 09 16:51:23 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 379.37 ms (1)
+Feb 09 16:51:42 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:51:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:51:42 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:51:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:51:42 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:51:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:51:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:51:42 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:51:42 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:51:42 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:51:42 symfony [info] {main} Get slot "title"
+Feb 09 16:51:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id IN (?, ?, ?)) - (31, 23, 30)
+Feb 09 16:51:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 09 16:51:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:51:42 symfony [info] {sfWebDebugLogger} Configuration 236.44 ms (11)
+Feb 09 16:51:42 symfony [info] {sfWebDebugLogger} Factories 348.93 ms (1)
+Feb 09 16:51:42 symfony [info] {sfWebDebugLogger} Action "contribution/index" 164.65 ms (1)
+Feb 09 16:51:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.02 ms (3)
+Feb 09 16:51:42 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 314.44 ms (1)
+Feb 09 16:51:42 symfony [info] {sfWebResponse} Send content (49338 o)
+Feb 09 16:52:05 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:52:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:52:05 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:52:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:52:05 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:52:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:52:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:52:05 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:52:05 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:52:05 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:52:05 symfony [info] {main} Get slot "title"
+Feb 09 16:52:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id IN (?, ?, ?)) - (31, 23, 30)
+Feb 09 16:52:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 09 16:52:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:52:05 symfony [info] {sfWebDebugLogger} Configuration 258.06 ms (11)
+Feb 09 16:52:05 symfony [info] {sfWebDebugLogger} Factories 379.74 ms (1)
+Feb 09 16:52:05 symfony [info] {sfWebDebugLogger} Action "contribution/index" 155.25 ms (1)
+Feb 09 16:52:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.45 ms (3)
+Feb 09 16:52:05 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 308.20 ms (1)
+Feb 09 16:52:05 symfony [info] {sfWebResponse} Send content (49339 o)
+Feb 09 16:52:20 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:52:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:52:20 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:52:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:52:20 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:52:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:52:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:52:20 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:52:20 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:52:20 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:52:20 symfony [info] {main} Get slot "title"
+Feb 09 16:52:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id IN (?, ?, ?)) - (31, 23, 30)
+Feb 09 16:52:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 09 16:52:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:52:20 symfony [info] {sfWebDebugLogger} Configuration 224.17 ms (11)
+Feb 09 16:52:20 symfony [info] {sfWebDebugLogger} Factories 329.71 ms (1)
+Feb 09 16:52:20 symfony [info] {sfWebDebugLogger} Action "contribution/index" 137.76 ms (1)
+Feb 09 16:52:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.33 ms (3)
+Feb 09 16:52:20 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 310.44 ms (1)
+Feb 09 16:52:20 symfony [info] {sfWebResponse} Send content (49338 o)
+Feb 09 16:53:16 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /contribution/show/id/12 with parameters array (  'module' => 'contribution',  'action' => 'show',  'id' => '12',)
+Feb 09 16:53:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:53:16 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:53:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:53:16 symfony [info] {contributionActions} Call "contributionActions->executeShow()"
+Feb 09 16:53:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:53:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s WHERE (s.id = ?) LIMIT 1 - (12)
+Feb 09 16:53:16 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/showSuccess.php"
+Feb 09 16:53:16 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:53:16 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:53:16 symfony [info] {main} Get slot "title"
+Feb 09 16:53:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id IN (?, ?, ?)) - (31, 23, 30)
+Feb 09 16:53:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 09 16:53:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:53:16 symfony [info] {sfWebDebugLogger} Configuration 237.04 ms (11)
+Feb 09 16:53:16 symfony [info] {sfWebDebugLogger} Factories 346.04 ms (1)
+Feb 09 16:53:16 symfony [info] {sfWebDebugLogger} Action "contribution/show" 228.34 ms (1)
+Feb 09 16:53:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 71.51 ms (3)
+Feb 09 16:53:16 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/show" 118.78 ms (1)
+Feb 09 16:53:16 symfony [info] {sfWebResponse} Send content (40555 o)
+Feb 09 16:57:17 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /contribution/show/id/12 with parameters array (  'module' => 'contribution',  'action' => 'show',  'id' => '12',)
+Feb 09 16:57:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:57:17 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:57:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:57:17 symfony [info] {contributionActions} Call "contributionActions->executeShow()"
+Feb 09 16:57:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:57:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s WHERE (s.id = ?) LIMIT 1 - (12)
+Feb 09 16:57:17 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/showSuccess.php"
+Feb 09 16:57:17 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:57:17 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:57:17 symfony [info] {main} Get slot "title"
+Feb 09 16:57:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id IN (?, ?, ?)) - (31, 23, 30)
+Feb 09 16:57:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 09 16:57:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:57:17 symfony [info] {sfWebDebugLogger} Configuration 274.82 ms (11)
+Feb 09 16:57:17 symfony [info] {sfWebDebugLogger} Factories 412.43 ms (1)
+Feb 09 16:57:17 symfony [info] {sfWebDebugLogger} Action "contribution/show" 174.14 ms (1)
+Feb 09 16:57:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.56 ms (3)
+Feb 09 16:57:17 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/show" 106.88 ms (1)
+Feb 09 16:57:17 symfony [info] {sfWebResponse} Send content (40586 o)
+Feb 09 16:57:28 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 16:57:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:57:28 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:57:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:57:28 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 16:57:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:57:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 16:57:28 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 16:57:28 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:57:28 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:57:28 symfony [info] {main} Get slot "title"
+Feb 09 16:57:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id IN (?, ?, ?)) - (31, 23, 30)
+Feb 09 16:57:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 09 16:57:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:57:28 symfony [info] {sfWebDebugLogger} Configuration 5.29 ms (10)
+Feb 09 16:57:28 symfony [info] {sfWebDebugLogger} Factories 135.15 ms (1)
+Feb 09 16:57:28 symfony [info] {sfWebDebugLogger} Action "contribution/index" 162.02 ms (1)
+Feb 09 16:57:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.88 ms (3)
+Feb 09 16:57:28 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 282.79 ms (1)
+Feb 09 16:57:29 symfony [info] {sfWebResponse} Send content (49302 o)
+Feb 09 16:57:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /contribution/show/id/2 with parameters array (  'module' => 'contribution',  'action' => 'show',  'id' => '2',)
+Feb 09 16:57:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 16:57:33 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 16:57:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 16:57:33 symfony [info] {contributionActions} Call "contributionActions->executeShow()"
+Feb 09 16:57:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 16:57:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s WHERE (s.id = ?) LIMIT 1 - (2)
+Feb 09 16:57:33 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/showSuccess.php"
+Feb 09 16:57:33 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:57:33 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 16:57:33 symfony [info] {main} Get slot "title"
+Feb 09 16:57:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id IN (?, ?, ?)) - (31, 23, 30)
+Feb 09 16:57:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 09 16:57:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 16:57:33 symfony [info] {sfWebDebugLogger} Configuration 5.41 ms (10)
+Feb 09 16:57:33 symfony [info] {sfWebDebugLogger} Factories 121.40 ms (1)
+Feb 09 16:57:33 symfony [info] {sfWebDebugLogger} Action "contribution/show" 125.92 ms (1)
+Feb 09 16:57:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.68 ms (3)
+Feb 09 16:57:33 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/show" 79.27 ms (1)
+Feb 09 16:57:33 symfony [info] {sfWebResponse} Send content (41176 o)
+Feb 09 17:03:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /contribution/show/id/2 with parameters array (  'module' => 'contribution',  'action' => 'show',  'id' => '2',)
+Feb 09 17:03:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 17:03:15 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 17:03:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 17:03:15 symfony [info] {contributionActions} Call "contributionActions->executeShow()"
+Feb 09 17:03:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 17:03:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s WHERE (s.id = ?) LIMIT 1 - (2)
+Feb 09 17:03:15 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/showSuccess.php"
+Feb 09 17:03:15 symfony [err] {sfConfigurationException} The route "contribution_show_user2" does not exist.
+Feb 09 17:03:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 09 17:03:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 17:03:16 symfony [info] {sfWebDebugLogger} Configuration 7.35 ms (10)
+Feb 09 17:03:16 symfony [info] {sfWebDebugLogger} Factories 300.73 ms (1)
+Feb 09 17:03:16 symfony [info] {sfWebDebugLogger} Action "contribution/show" 530.12 ms (1)
+Feb 09 17:03:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 67.00 ms (2)
+Feb 09 17:03:16 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/show" 298.72 ms (1)
+Feb 09 17:03:26 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 17:03:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 17:03:26 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 17:03:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 17:03:26 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 17:03:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 17:03:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 17:03:26 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 17:03:26 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 17:03:26 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 17:03:26 symfony [info] {main} Get slot "title"
+Feb 09 17:03:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id IN (?, ?, ?)) - (31, 23, 30)
+Feb 09 17:03:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 09 17:03:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 17:03:26 symfony [info] {sfWebDebugLogger} Configuration 6.04 ms (10)
+Feb 09 17:03:26 symfony [info] {sfWebDebugLogger} Factories 137.73 ms (1)
+Feb 09 17:03:26 symfony [info] {sfWebDebugLogger} Action "contribution/index" 159.94 ms (1)
+Feb 09 17:03:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.01 ms (3)
+Feb 09 17:03:26 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 305.04 ms (1)
+Feb 09 17:03:26 symfony [info] {sfWebResponse} Send content (49302 o)
+Feb 09 17:03:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /contribution/show/id/1 with parameters array (  'module' => 'contribution',  'action' => 'show',  'id' => '1',)
+Feb 09 17:03:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 17:03:30 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 17:03:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 17:03:30 symfony [info] {contributionActions} Call "contributionActions->executeShow()"
+Feb 09 17:03:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 17:03:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s WHERE (s.id = ?) LIMIT 1 - (1)
+Feb 09 17:03:30 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/showSuccess.php"
+Feb 09 17:03:30 symfony [err] {sfConfigurationException} The route "contribution_show_user1" does not exist.
+Feb 09 17:03:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Feb 09 17:03:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 17:03:30 symfony [info] {sfWebDebugLogger} Configuration 5.98 ms (10)
+Feb 09 17:03:30 symfony [info] {sfWebDebugLogger} Factories 135.81 ms (1)
+Feb 09 17:03:30 symfony [info] {sfWebDebugLogger} Action "contribution/show" 169.26 ms (1)
+Feb 09 17:03:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.42 ms (2)
+Feb 09 17:03:30 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/show" 244.98 ms (1)
+Feb 09 17:03:57 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /contribution/show/id/1 with parameters array (  'module' => 'contribution',  'action' => 'show',  'id' => '1',)
+Feb 09 17:03:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 17:03:58 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 17:03:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 17:03:58 symfony [info] {contributionActions} Call "contributionActions->executeShow()"
+Feb 09 17:03:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 17:03:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s WHERE (s.id = ?) LIMIT 1 - (1)
+Feb 09 17:03:58 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/showSuccess.php"
+Feb 09 17:03:58 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 17:03:58 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 17:03:58 symfony [info] {main} Get slot "title"
+Feb 09 17:03:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id IN (?, ?, ?)) - (31, 23, 30)
+Feb 09 17:03:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 09 17:03:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 17:03:58 symfony [info] {sfWebDebugLogger} Configuration 4.93 ms (10)
+Feb 09 17:03:58 symfony [info] {sfWebDebugLogger} Factories 130.02 ms (1)
+Feb 09 17:03:58 symfony [info] {sfWebDebugLogger} Action "contribution/show" 145.23 ms (1)
+Feb 09 17:03:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.64 ms (3)
+Feb 09 17:03:58 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/show" 110.47 ms (1)
+Feb 09 17:03:58 symfony [info] {sfWebResponse} Send content (41009 o)
+Feb 09 17:14:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /contribution/show/id/1 with parameters array (  'module' => 'contribution',  'action' => 'show',  'id' => '1',)
+Feb 09 17:14:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 17:14:01 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 17:14:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 17:14:01 symfony [info] {contributionActions} Call "contributionActions->executeShow()"
+Feb 09 17:14:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 17:14:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s WHERE (s.id = ?) LIMIT 1 - (1)
+Feb 09 17:14:01 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/showSuccess.php"
+Feb 09 17:14:01 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 17:14:01 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 17:14:01 symfony [info] {main} Get slot "title"
+Feb 09 17:14:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id IN (?, ?, ?)) - (31, 23, 30)
+Feb 09 17:14:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 09 17:14:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 17:14:01 symfony [info] {sfWebDebugLogger} Configuration 10.97 ms (10)
+Feb 09 17:14:01 symfony [info] {sfWebDebugLogger} Factories 306.12 ms (1)
+Feb 09 17:14:01 symfony [info] {sfWebDebugLogger} Action "contribution/show" 553.43 ms (1)
+Feb 09 17:14:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 67.26 ms (3)
+Feb 09 17:14:01 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/show" 193.93 ms (1)
+Feb 09 17:14:01 symfony [info] {sfWebResponse} Send content (41012 o)
+Feb 09 17:14:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/contribution/" (/).
+Feb 09 17:14:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Feb 09 17:14:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 17:14:09 symfony [info] {sfWebDebugLogger} Configuration 3.16 ms (5)
+Feb 09 17:14:09 symfony [info] {sfWebDebugLogger} Factories 196.73 ms (1)
+Feb 09 17:14:14 symfony [info] {sfPatternRouting} Match route "contribution" (/contribution.:sf_format) for /contribution with parameters array (  'module' => 'contribution',  'action' => 'index',  'sf_format' => 'html',)
+Feb 09 17:14:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 17:14:14 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 17:14:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 17:14:14 symfony [info] {contributionActions} Call "contributionActions->executeIndex()"
+Feb 09 17:14:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 17:14:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s - ()
+Feb 09 17:14:15 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/indexSuccess.php"
+Feb 09 17:14:15 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 17:14:15 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 17:14:15 symfony [info] {main} Get slot "title"
+Feb 09 17:14:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id IN (?, ?, ?)) - (31, 23, 30)
+Feb 09 17:14:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 09 17:14:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 17:14:15 symfony [info] {sfWebDebugLogger} Configuration 5.19 ms (10)
+Feb 09 17:14:15 symfony [info] {sfWebDebugLogger} Factories 136.22 ms (1)
+Feb 09 17:14:15 symfony [info] {sfWebDebugLogger} Action "contribution/index" 162.31 ms (1)
+Feb 09 17:14:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.93 ms (3)
+Feb 09 17:14:15 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/index" 265.13 ms (1)
+Feb 09 17:14:15 symfony [info] {sfWebResponse} Send content (49302 o)
+Feb 09 17:14:19 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /contribution/show/id/1 with parameters array (  'module' => 'contribution',  'action' => 'show',  'id' => '1',)
+Feb 09 17:14:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 09 17:14:19 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 09 17:14:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 09 17:14:19 symfony [info] {contributionActions} Call "contributionActions->executeShow()"
+Feb 09 17:14:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 09 17:14:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_contribution s WHERE (s.id = ?) LIMIT 1 - (1)
+Feb 09 17:14:20 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/contribution/templates/showSuccess.php"
+Feb 09 17:14:20 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 17:14:20 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 09 17:14:20 symfony [info] {main} Get slot "title"
+Feb 09 17:14:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.id IN (?, ?, ?)) - (31, 23, 30)
+Feb 09 17:14:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 09 17:14:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 09 17:14:20 symfony [info] {sfWebDebugLogger} Configuration 5.80 ms (10)
+Feb 09 17:14:20 symfony [info] {sfWebDebugLogger} Factories 142.72 ms (1)
+Feb 09 17:14:20 symfony [info] {sfWebDebugLogger} Action "contribution/show" 156.44 ms (1)
+Feb 09 17:14:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.76 ms (3)
+Feb 09 17:14:20 symfony [info] {sfWebDebugLogger} View "Success" for "contribution/show" 91.35 ms (1)
+Feb 09 17:14:20 symfony [info] {sfWebResponse} Send content (40976 o)

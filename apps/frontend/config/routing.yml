@@ -9,6 +9,15 @@ category:
   requirements:
     sf_format: (?:html|atom)
 
+contribution:
+  class:   sfDoctrineRouteCollection
+  options:
+    model:          StackendContribution
+    column:         token
+    object_actions: { publish: put }
+  requirements:
+    token: \w+
+
 job:
   class:   sfDoctrineRouteCollection
   options:
@@ -26,6 +35,18 @@ job_show_user:
     type:  object
     method_for_query: retrieveActiveJob
   param:   { module: job, action: show }
+  requirements:
+    id: \d+
+    sf_method: [GET]
+
+contribution_show_user:
+  url:     /contribution/:company_slug/:location_slug/:id/:position_slug
+  class:   sfDoctrineRoute
+  options:
+    model: StackendContribution
+    type:  object
+    method_for_query: retrieveActiveContribution
+  param:   { module: contribution, action: show }
   requirements:
     id: \d+
     sf_method: [GET]
