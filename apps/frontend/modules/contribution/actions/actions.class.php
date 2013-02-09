@@ -20,7 +20,9 @@ class contributionActions extends sfActions
   public function executeShow(sfWebRequest $request)
   {
     $this->contribution = Doctrine_Core::getTable('StackendContribution')->find(array($request->getParameter('id')));
-    $this->forward404Unless($this->contribution);
+    //$this->forward404Unless($this->contribution);
+    //$this->contribution = $this->getRoute()->getObject();
+
   }
 
   public function executeNew(sfWebRequest $request)

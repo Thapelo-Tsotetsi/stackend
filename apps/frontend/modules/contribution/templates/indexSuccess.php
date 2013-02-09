@@ -6,7 +6,7 @@
       <tr class="<?php echo fmod($i, 2) ? 'even' : 'odd' ?>">
         <td class="location"><?php echo $stackend_contribution->getLocation() ?></td>
         <td class="position">
-          <a href="<?php echo url_for('contribution/show?id='.$stackend_contribution->getId()) ?>">
+          <a href="<?php echo url_for('contribution_show_user', $stackend_contribution) ?>">
             <?php echo $stackend_contribution->getPosition() ?>
           </a>
         </td>
