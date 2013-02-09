@@ -8,7 +8,7 @@
         <?php echo link_to($job->getPosition(), 'job_show_user', $job) ?>
       </td>
       <td class="company">
-        <?php echo $job->getCompany()."Test" ?>
+        <?php echo $job->getCompany() ?>
       </td>
     </tr>
   <?php endforeach; ?>

@@ -38,8 +38,14 @@
   <div class="meta">
     <small>posted on <?php echo $job->getDateTimeObject('created_at')->format('m/d/Y') ?></small>
   </div>
+  
+    <div style="padding: 20px 10px">
+		<?php echo auto_link_text($job->getUrl())?>
+  </div>
  
   <div style="padding: 20px 0">
 		<a href="<?php echo url_for('job_edit', $job) ?>">Edit</a>
   </div>
 </div>
+
+
