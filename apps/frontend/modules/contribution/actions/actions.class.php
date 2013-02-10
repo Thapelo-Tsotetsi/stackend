@@ -12,16 +12,21 @@ class contributionActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $this->stackend_contributions = Doctrine_Core::getTable('StackendContribution')
-      ->createQuery('a')
-      ->execute();
+  //  $this->stackend_contributions = Doctrine_Core::getTable('StackendContribution')
+   //   ->createQuery('a')
+    //  ->execute();
+     		
+	//$this->stackend_contributions = Doctrine_Core::getTable('StackendContribution')->getActiveJobs();
+	$this->categories = Doctrine_Core::getTable('StackendCategoryContribution')->getWithJobs();
+	
+  
   }
 
   public function executeShow(sfWebRequest $request)
   {
-    $this->contribution = Doctrine_Core::getTable('StackendContribution')->find(array($request->getParameter('id')));
+    //$this->contribution = Doctrine_Core::getTable('StackendContribution')->find(array($request->getParameter('id')));
     //$this->forward404Unless($this->contribution);
-    //$this->contribution = $this->getRoute()->getObject();
+    $this->contribution = $this->getRoute()->getObject();
 
   }
 
