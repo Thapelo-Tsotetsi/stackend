@@ -12,14 +12,29 @@
  */
 class StackendCategoryContribution extends BaseStackendCategoryContribution
 {
-
 	public function getActiveJobs($max = 10)
-	{
-	  $q = Doctrine_Query::create()
-		->from('StackendContribution j')
-		->where('j.category_id = ?', $this->getId())
-		->limit($max);
-	 
-	  return Doctrine_Core::getTable('StackendContribution')->getActiveJobs($q);
-	}
+{
+  $q = Doctrine_Query::create()
+    ->from('StackendContribution j')
+    ->where('j.category_id = ?', $this->getId())
+    ->limit($max);
+ 
+  return Doctrine_Core::getTable('StackendContribution')->getActiveJobs($q);
+}
+	
+public function getSlug()
+{
+  return Stackend::slugify($this->getName());
+}
+	
+	
+public function countActiveJobs()
+{
+  $q = Doctrine_Query::create()
+    ->from('StackendContribution j')
+    ->where('j.category_id = ?', $this->getId());
+ 
+  return Doctrine_Core::getTable('StackendContribution')->countActiveJobs($q);
+}	
+	
 }

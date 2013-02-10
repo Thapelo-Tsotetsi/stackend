@@ -16,51 +16,37 @@ class StackendContributionTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('StackendContribution');
     }
-    
-	public function getActiveJobs(Doctrine_Query $q = null)
-	{
-	  if (is_null($q))
-	  {
-		$q = Doctrine_Query::create()
-		  ->from('StackendContribution j');
-	  }
-	 
-	  $q->andWhere('j.expires_at > ?', date('Y-m-d H:i:s', time()))
-		->addOrderBy('j.expires_at DESC');
-	 
-	  return $q->execute();
-	}
-  
-  public function getWithJobs()
+ 
+  public function retrieveActiveContribution(Doctrine_Query $q)
   {
-    $q = $this->createQuery('c')
-      ->leftJoin('c.JobeetJobs j')
-      ->where('j.expires_at > ?', date('Y-m-d H:i:s', time()));
- 
-    return $q->execute();
+    return $this->addActiveJobsQuery($q)->fetchOne();
   }
-  
-	public function retrieveActiveContribution(Doctrine_Query $q)
-	{
-		return $this->addActiveJobsQuery($q)->fetchOne();
-	}
-	
-	public function addActiveJobsQuery(Doctrine_Query $q = null)
-	{
-		if (is_null($q))
-		{
-			$q = Doctrine_Query::create()
-				->from('StackendContribution j');
-		}
  
-		$alias = $q->getRootAlias();
+  public function getActiveJobs(Doctrine_Query $q = null)
+  {
+    return $this->addActiveJobsQuery($q)->execute();
+  }
  
-		$q->andWhere($alias . '.expires_at > ?', date('Y-m-d H:i:s', time()))
-			->addOrderBy($alias . '.created_at DESC');
-			
-		$q->andWhere($alias . '.is_activated = ?', 1);
+  public function countActiveJobs(Doctrine_Query $q = null)
+  {
+    return $this->addActiveJobsQuery($q)->count();
+  }
  
-		return $q;
-   }
-  
+  public function addActiveJobsQuery(Doctrine_Query $q = null)
+  {
+    if (is_null($q))
+    {
+      $q = Doctrine_Query::create()
+        ->from('StackendContribution j');
+    }
+ 
+    $alias = $q->getRootAlias();
+ 
+    $q->andWhere($alias . '.expires_at > ?', date('Y-m-d H:i:s', time()))
+      ->addOrderBy($alias . '.created_at DESC');
+ 
+    return $q;
+  } 
+    
+
 }

@@ -31,7 +31,7 @@
   </div>
  
   <div style="padding: 20px 0">
-    <a href="<?php echo url_for('job/edit?id='.$contribution->getId()) ?>">
+    <a href="<?php echo url_for('contribution/edit?id='.$contribution->getId()) ?>">
       Edit
     </a>
   </div>
