@@ -8,6 +8,14 @@ category:
   options: { model: StackendCategory, type: object }
   requirements:
     sf_format: (?:html|atom)
+    
+category_contribution:
+  url:     /category_contribution/:slug.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: category_contribution, action: show, sf_format: html }
+  options: { model: StackendCategoryContribution, type: object }
+  requirements:
+    sf_format: (?:html|atom)
 
 job:
   class:   sfDoctrineRouteCollection

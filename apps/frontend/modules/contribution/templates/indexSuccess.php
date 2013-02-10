@@ -1,36 +1,22 @@
 <?php use_stylesheet('jobs.css') ?>
  
 <div id="jobs">
-  <?php foreach ($categories as $category): ?>
-    <div class="category_<?php echo Stackend::slugify($category->getName()) ?>">
+  <?php foreach ($categories as $category_contribution): ?>
+    <div class="category_<?php echo Stackend::slugify($category_contribution->getName()) ?>">
       <div class="category">
         <div class="feed">
           <a href="">Feed</a>
         </div>
                 <h1>
-          <?php echo link_to($category, 'category', $category) ?>
+          <?php echo link_to($category_contribution, 'category_contribution', $category_contribution) ?>
         </h1>
       </div>
  
-      <table class="jobs">
-        <?php foreach ($category->getActiveJobs(sfConfig::get('app_max_jobs_on_homepage')) as $i => $job): ?>
-          <tr class="<?php echo fmod($i, 2) ? 'even' : 'odd' ?>">
-            <td class="location">
-              <?php echo $job->getLocation() ?>
-            </td>
-            <td class="position">
-              <?php echo link_to($job->getPosition(), 'contribution_show_user', $job) ?>
-            </td>
-            <td class="company">
-              <?php echo $job->getCompany() ?>
-            </td>
-          </tr>
-        <?php endforeach; ?>
-      </table>
+<?php include_partial('contribution/list', array('jobs' => $category_contribution->getActiveJobs(sfConfig::get('app_max_jobs_on_homepage')))) ?>
       
-      <?php if (($count = $category->countActiveJobs() - sfConfig::get('app_max_jobs_on_homepage')) > 0): ?>
+      <?php if (($count = $category_contribution->countActiveJobs() - sfConfig::get('app_max_jobs_on_homepage')) > 0): ?>
         <div class="more_jobs">
-          and <?php echo link_to($count, 'category', $category) ?>
+          and <?php echo link_to($count, 'category_contribution', $category_contribution) ?>
           more...
         </div>
       <?php endif; ?>
