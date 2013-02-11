@@ -8,7 +8,7 @@ category:
   options: { model: StackendCategory, type: object }
   requirements:
     sf_format: (?:html|atom)
-    
+
 category_contribution:
   url:     /category_contribution/:slug.:sf_format
   class:   sfDoctrineRoute
@@ -25,7 +25,7 @@ job:
     object_actions: { publish: put }
   requirements:
     token: \w+
- 
+
 job_show_user:
   url:     /job/:company_slug/:location_slug/:id/:position_slug
   class:   sfDoctrineRoute
@@ -62,7 +62,7 @@ contribution_show_user:
 job_search:
   url:   /search
   param: { module: job, action: search }
-    
+
 api_jobs:
   url:     /api/:token/jobs.:sf_format
   class:   sfDoctrineRoute
@@ -70,19 +70,19 @@ api_jobs:
   options: { model: StackendJob, type: list, method: getForToken }
   requirements:
     sf_format: (?:xml|json|yaml)
-    
+
 affiliate:
   class:   sfDoctrineRouteCollection
   options:
     model: StackendAffiliate
     actions: [new, create]
     object_actions: { wait: get }
- 
+
 # default rules
 homepage:
   url:   /
   param: { module: job, action: index }
- 
+
 default_index:
   url:   /:module
   param: { action: index }

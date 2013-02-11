@@ -1,5 +1,10 @@
 <?php use_stylesheet('job.css') ?>
 <?php use_helper('Text') ?>
+
+
+<?php if ($sf_request->getParameter('token') == $contribution->getToken()): ?>
+  <?php include_partial('contribution/admin', array('contribution' => $contribution)) ?>
+<?php endif ?>
  
 <div id="job">
   <h1><?php echo $contribution->getCompany() ?></h1>
@@ -31,12 +36,6 @@
   </div>
  
   <div style="padding: 20px 0">
-    <a href="<?php echo url_for('contribution/edit?id='.$contribution->getId()) ?>">
-      Edit
-    </a>
-  </div>
+  <a href="<?php echo url_for('contribution_edit', $contribution) ?>">Edit</a>
+    </div>
 </div>
-
-
-
-

@@ -21,14 +21,10 @@ public function getActiveJobs($max = 10)
   return $q->execute();
 }
 	
-
-	
-	
 public function countActiveJobs()
 {
   return $this->getActiveJobsQuery()->count();
 }
-	
 
 public function getActiveJobsQuery()
 {

@@ -24,20 +24,20 @@ class contributionActions extends sfActions
 
   public function executeShow(sfWebRequest $request)
   {
-    //$this->contribution = Doctrine_Core::getTable('StackendContribution')->find(array($request->getParameter('id')));
-    //$this->forward404Unless($this->contribution);
+
     $this->contribution = $this->getRoute()->getObject();
 
   }
 
   public function executeNew(sfWebRequest $request)
   {
-    $this->form = new StackendContributionForm();
+    $contribution =new StackendContribution();
+    $contribution->setType('full-time');
+    $this->form = new StackendContributionForm($contribution);
   }
 
   public function executeCreate(sfWebRequest $request)
   {
-    $this->forward404Unless($request->isMethod(sfRequest::POST));
 
     $this->form = new StackendContributionForm();
 
@@ -48,15 +48,14 @@ class contributionActions extends sfActions
 
   public function executeEdit(sfWebRequest $request)
   {
-    $this->forward404Unless($stackend_contribution = Doctrine_Core::getTable('StackendContribution')->find(array($request->getParameter('id'))), sprintf('Object stackend_contribution does not exist (%s).', $request->getParameter('id')));
-    $this->form = new StackendContributionForm($stackend_contribution);
+    
+    $this->form = new StackendContributionForm($this->getRoute()->getObject());
   }
 
   public function executeUpdate(sfWebRequest $request)
   {
-    $this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
-    $this->forward404Unless($stackend_contribution = Doctrine_Core::getTable('StackendContribution')->find(array($request->getParameter('id'))), sprintf('Object stackend_contribution does not exist (%s).', $request->getParameter('id')));
-    $this->form = new StackendContributionForm($stackend_contribution);
+    
+    $this->form = new StackendContributionForm($this->getRoute()->getObject());
 
     $this->processForm($request, $this->form);
 
@@ -67,7 +66,8 @@ class contributionActions extends sfActions
   {
     $request->checkCSRFProtection();
 
-    $this->forward404Unless($stackend_contribution = Doctrine_Core::getTable('StackendContribution')->find(array($request->getParameter('id'))), sprintf('Object stackend_contribution does not exist (%s).', $request->getParameter('id')));
+    $stackend_contribution = $this->getRoute()->getObject();
+
     $stackend_contribution->delete();
 
     $this->redirect('contribution/index');
@@ -75,12 +75,27 @@ class contributionActions extends sfActions
 
   protected function processForm(sfWebRequest $request, sfForm $form)
   {
-    $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
+    $form->bind(
+      $request->getParameter($form->getName()), 
+      $request->getFiles($form->getName()));
+
     if ($form->isValid())
     {
       $stackend_contribution = $form->save();
 
-      $this->redirect('contribution/edit?id='.$stackend_contribution->getId());
+      $this->redirect('contribution_show', $stackend_contribution);
     }
   }
+
+public function executePublish(sfWebRequest $request)
+{
+  $request->checkCSRFProtection();
+ 
+  $contribution = $this->getRoute()->getObject();
+  $contribution->publish();
+ 
+  $this->getUser()->setFlash('notice', sprintf('Your job is now online for %s days.', sfConfig::get('app_active_days')));
+ 
+  $this->redirect('contribution_show_user', $contribution);
+}
 }
