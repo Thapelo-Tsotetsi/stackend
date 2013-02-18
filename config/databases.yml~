@@ -11,4 +11,4 @@ test:
     param:
       dsn: 'mysql:host=127.0.0.1;dbname=stackend_test'
       username: root
-      password:
+      password: 0407

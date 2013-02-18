@@ -63,13 +63,5 @@ class StackendContributionTable extends Doctrine_Table
   return $q;
   } 
     
-  public function retrieveBackendContributionList(Doctrine_Query $q)
-  {
-    $rootAlias = $q->getRootAlias();
- 
-    $q->leftJoin($rootAlias . '.StackendCategoryContribution c');
- 
-    return $q;
-  }
 
 }

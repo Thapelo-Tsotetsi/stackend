@@ -1,3 +1,21 @@
+stackend_category_contribution:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                StackendCategoryContribution
+    module:               category_contribution
+    prefix_path:          /category_contribution
+    column:               id
+    with_wildcard_routes: true
+
+stackend_contribution:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                StackendContribution
+    module:               contribution
+    prefix_path:          /contribution
+    column:               id
+    with_wildcard_routes: true
+
 stackend_affiliate:
   class: sfDoctrineRouteCollection
   options:
