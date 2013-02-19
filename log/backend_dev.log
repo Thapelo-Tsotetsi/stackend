@@ -22893,3 +22893,37 @@ Feb 18 15:22:14 symfony [info] {sfWebDebugLogger} Partial "contribution/_generat
 Feb 18 15:22:14 symfony [info] {sfWebDebugLogger} Partial "contribution/_form_actions" 6.95 ms (1)
 Feb 18 15:22:14 symfony [info] {sfWebDebugLogger} Partial "contribution/_form_footer" 2.30 ms (1)
 Feb 18 15:22:14 symfony [info] {sfWebResponse} Send content (143219 o)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+Feb 18 22:52:48 symfony [info] {sfPatternRouting} Match route "stackend_contribution_edit" (/contribution/:id/edit.:sf_format) for /contribution/31/edit with parameters array (  'module' => 'contribution',  'action' => 'edit',  'sf_format' => 'html',  'id' => '31',)
+Feb 18 22:52:48 symfony [info] {myUser} Automatic user logout due to timeout
+Feb 18 22:52:48 symfony [info] {myUser} User is not authenticated
+Feb 18 22:52:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 18 22:52:49 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Feb 18 22:52:49 symfony [info] {sfBasicSecurityFilter} Action "contribution/edit" requires authentication, forwarding to "sfGuardAuth/signin"
+Feb 18 22:52:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 18 22:52:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 18 22:52:49 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Feb 18 22:52:49 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+Feb 18 22:52:49 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+Feb 18 22:52:49 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/backend/templates/layout.php"
+Feb 18 22:52:49 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/backend/templates/layout.php"
+Feb 18 22:52:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Feb 18 22:52:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 18 22:52:49 symfony [info] {sfWebDebugLogger} Configuration 1852.84 ms (14)
+Feb 18 22:52:49 symfony [info] {sfWebDebugLogger} Factories 942.11 ms (1)
+Feb 18 22:52:49 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 79.42 ms (1)
+Feb 18 22:52:49 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 139.99 ms (1)
+Feb 18 22:52:49 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 51.84 ms (1)
+Feb 18 22:52:49 symfony [info] {sfWebResponse} Send content (41744 o)
