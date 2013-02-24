@@ -27,6 +27,6 @@ class ProjectConfiguration extends sfProjectConfiguration
   {
     $this->enablePlugins('sfDoctrinePlugin');
     $this->enablePlugins('sfDoctrineGuardPlugin');
-    $this->setWebDir($this->getRootDir().'/public_html_stackend');
+    $this->setWebDir($this->getRootDir().'/public_html_stackendlive');
   }
 }

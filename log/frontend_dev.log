@@ -18996,3 +18996,57 @@ Feb 18 10:09:57 symfony [info] {sfWebDebugLogger} Action "category_contribution/
 Feb 18 10:09:57 symfony [info] {sfWebDebugLogger} Action "default/module" 0.45 ms (1)
 Feb 18 10:09:57 symfony [info] {sfWebDebugLogger} View "Success" for "default/module" 36.15 ms (1)
 Feb 18 10:09:57 symfony [info] {sfWebResponse} Send content (32739 o)
+Feb 23 17:21:58 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Feb 23 17:21:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 23 17:21:58 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 23 17:21:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 23 17:21:58 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Feb 23 17:21:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 23 17:21:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug, s2.id AS s2__id, s2.category_id AS s2__category_id, s2.type AS s2__type, s2.company AS s2__company, s2.logo AS s2__logo, s2.url AS s2__url, s2.position AS s2__position, s2.location AS s2__location, s2.description AS s2__description, s2.how_to_apply AS s2__how_to_apply, s2.token AS s2__token, s2.is_public AS s2__is_public, s2.is_activated AS s2__is_activated, s2.email AS s2__email, s2.expires_at AS s2__expires_at, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM stackend_category s LEFT JOIN stackend_job s2 ON s.id = s2.category_id WHERE (s2.expires_at > ? AND s2.is_activated = ?) - (2013-02-23 17:21:59, 1)
+Feb 23 17:21:59 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Feb 23 17:21:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.category_id = ? AND s.expires_at > ? AND s.is_activated = ?) ORDER BY s.created_at DESC LIMIT 10 - (1, 2013-02-23 17:21:59, 1)
+Feb 23 17:21:59 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_list.php"
+Feb 23 17:21:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM stackend_job s WHERE s.category_id = ? AND s.expires_at > ? AND s.is_activated = ? - (1, 2013-02-23 17:21:59, 1)
+Feb 23 17:21:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.category_id = ? AND s.expires_at > ? AND s.is_activated = ?) ORDER BY s.created_at DESC LIMIT 10 - (2, 2013-02-23 17:21:59, 1)
+Feb 23 17:21:59 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_list.php"
+Feb 23 17:21:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM stackend_job s WHERE s.category_id = ? AND s.expires_at > ? AND s.is_activated = ? - (2, 2013-02-23 17:21:59, 1)
+Feb 23 17:21:59 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 23 17:21:59 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 23 17:21:59 symfony [info] {main} Get slot "title"
+Feb 23 17:21:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 23 17:21:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 23 17:21:59 symfony [info] {sfWebDebugLogger} Configuration 419.42 ms (10)
+Feb 23 17:21:59 symfony [info] {sfWebDebugLogger} Factories 408.94 ms (1)
+Feb 23 17:21:59 symfony [info] {sfWebDebugLogger} Action "job/index" 683.08 ms (1)
+Feb 23 17:21:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 35.08 ms (6)
+Feb 23 17:21:59 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 181.82 ms (1)
+Feb 23 17:21:59 symfony [info] {sfWebDebugLogger} Partial "job/_list" 33.84 ms (2)
+Feb 23 17:21:59 symfony [info] {sfWebResponse} Send content (52412 o)
+Feb 23 18:52:33 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Feb 23 18:52:33 symfony [info] {myUser} Automatic user logout due to timeout
+Feb 23 18:52:33 symfony [info] {myUser} User is not authenticated
+Feb 23 18:52:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 23 18:52:33 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Feb 23 18:52:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 23 18:52:33 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Feb 23 18:52:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Feb 23 18:52:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug, s2.id AS s2__id, s2.category_id AS s2__category_id, s2.type AS s2__type, s2.company AS s2__company, s2.logo AS s2__logo, s2.url AS s2__url, s2.position AS s2__position, s2.location AS s2__location, s2.description AS s2__description, s2.how_to_apply AS s2__how_to_apply, s2.token AS s2__token, s2.is_public AS s2__is_public, s2.is_activated AS s2__is_activated, s2.email AS s2__email, s2.expires_at AS s2__expires_at, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM stackend_category s LEFT JOIN stackend_job s2 ON s.id = s2.category_id WHERE (s2.expires_at > ? AND s2.is_activated = ?) - (2013-02-23 18:52:33, 1)
+Feb 23 18:52:33 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/indexSuccess.php"
+Feb 23 18:52:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.category_id = ? AND s.expires_at > ? AND s.is_activated = ?) ORDER BY s.created_at DESC LIMIT 10 - (1, 2013-02-23 18:52:33, 1)
+Feb 23 18:52:33 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_list.php"
+Feb 23 18:52:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM stackend_job s WHERE s.category_id = ? AND s.expires_at > ? AND s.is_activated = ? - (1, 2013-02-23 18:52:33, 1)
+Feb 23 18:52:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_job s WHERE (s.category_id = ? AND s.expires_at > ? AND s.is_activated = ?) ORDER BY s.created_at DESC LIMIT 10 - (2, 2013-02-23 18:52:33, 1)
+Feb 23 18:52:33 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/apps/frontend/modules/job/templates/_list.php"
+Feb 23 18:52:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM stackend_job s WHERE s.category_id = ? AND s.expires_at > ? AND s.is_activated = ? - (2, 2013-02-23 18:52:33, 1)
+Feb 23 18:52:33 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 23 18:52:33 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/frontend/templates/layout.php"
+Feb 23 18:52:33 symfony [info] {main} Get slot "title"
+Feb 23 18:52:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 23 18:52:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 23 18:52:33 symfony [info] {sfWebDebugLogger} Configuration 36.96 ms (11)
+Feb 23 18:52:33 symfony [info] {sfWebDebugLogger} Factories 108.09 ms (1)
+Feb 23 18:52:33 symfony [info] {sfWebDebugLogger} Action "job/index" 424.39 ms (1)
+Feb 23 18:52:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 25.50 ms (6)
+Feb 23 18:52:33 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 200.94 ms (1)
+Feb 23 18:52:33 symfony [info] {sfWebDebugLogger} Partial "job/_list" 30.00 ms (2)
+Feb 23 18:52:34 symfony [info] {sfWebResponse} Send content (53149 o)
