@@ -13,12 +13,13 @@
       <div id="header">
         <h1>
           <a href="<?php echo url_for('homepage') ?>">
-            <img src="/legacy/images/logo.jpg" alt="Stackend Job Board" />
+            <img src="/images/logo.jpg" alt="Stackend Job Board" />
           </a>
         </h1>
       </div>
  
-		<?php if ($sf_user->isAuthenticated()): ?>
+
+		<?php if ($sf_user->isAuthenticated() && $sf_user->isSuperAdmin()): ?>
 		  <div id="menu">
 			<ul>
 			  <li><?php echo link_to('Jobs', 'stackend_job') ?></li>
@@ -33,15 +34,27 @@
 			</ul>
 		  </div>
 		<?php endif ?>
+
+
+
+
+		<?php if ($sf_user->isAuthenticated() && !$sf_user->isSuperAdmin() ): ?>
+		  <div id="menu">
+			<ul>
+			  <li><?php echo link_to('Jobs', 'stackend_job') ?></li>
+			 <li><?php echo link_to('Logout', 'sf_guard_signout') ?></li>
+			</ul>
+		  </div>
+		<?php endif ?>
  
       <div id="content">
         <?php echo $sf_content ?>
       </div>
  
       <div id="footer">
-        <img src="/legacy/images/jobeet-mini.png" />
+        <img src="/images/jobeet-mini.png" />
         powered by <a href="/">
-        <img src="/legacy/images/symfony.gif" alt="symfony framework" /></a>
+        <img src="/images/symfony.gif" alt="symfony framework" /></a>
       </div>
     </div>
   </body>
