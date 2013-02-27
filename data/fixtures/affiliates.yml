@@ -4,11 +4,11 @@ StackendAffiliate:
     email:     fabien.potencier@example.com
     is_active: false
     token:     sensio_labs
-    StackendCategories: [programming]
+    StackendCategories: [vacation_work]
 
   symfony_2:
     url:       http:///www.sensop.org
     email:     fabien.poten@example.org
     is_active: false
     token:     symfony2
-    StackendCategories: [design, programming]
+    StackendCategories: [internship, vacation_work]

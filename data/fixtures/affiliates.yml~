@@ -2,13 +2,13 @@ StackendAffiliate:
   sensio_labs:
     url:       http://www.sensio-labs.com/
     email:     fabien.potencier@example.com
-    is_active: true
+    is_active: false
     token:     sensio_labs
     StackendCategories: [programming]
- 
-  symfony:
+
+  symfony_2:
     url:       http:///www.sensop.org
-    email:     fabien.potencier@example.org
+    email:     fabien.poten@example.org
     is_active: false
-    token:     symfony
+    token:     symfony2
     StackendCategories: [design, programming]

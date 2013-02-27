@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
 	<title>
-		<?php include_slot('title', 'Stackend - Your best local info sharing board') ?>
+		<?php include_slot('title', 'Stackend - Your best job board') ?>
 	</title>
 	<link rel="alternate" type="application/atom+xml" title="Latest Jobs"
   href="<?php echo url_for('job', array('sf_format' => 'atom'), true) ?>" />
