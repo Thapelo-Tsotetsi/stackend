@@ -18,22 +18,23 @@
       <div id="header">
         <div class="content">
 			<h1>
-				<!--<a href="<?php echo url_for('homepage') ?>">
+				<a href="<?php echo url_for('homepage') ?>">
 					<img src="/legacy/images/logo.jpg" alt="Stackend Job Board" /> 
 				</a>
-				-->
+				
 			</h1>
  
           <div id="sub_header">
             <div class="post">
               <h2>Ask for people</h2>
-              <div>
+              <!--<div>
                 <a href="<?php echo url_for('contribution_new') ?>">Post a Job</a>
               </div>
+		-->
             </div>
   
             <div class="search">
-				<h2>Ask for a job</h2>
+				<h2></h2>
 				<form action="<?php echo url_for('job_search') ?>" method="get">
 				  <input type="text" name="query" value="<?php echo $sf_request->getParameter('query') ?>" id="search_keywords" />
 				  <input type="submit" value="search" />
@@ -94,7 +95,10 @@
 				<li class="feed"><a href="<?php echo url_for('job', array('sf_format' => 'atom')) ?>">Full feed</a></li>
             <li><a href="">Stackend API</a></li>
             <li class="last">
-  <a href="<?php echo url_for('affiliate_new') ?>">Become an affiliate</a>
+
+
+  <a href="/backend.php/guard/login">Admin-Login</a>
+
 </li>
           </ul>
         </div>

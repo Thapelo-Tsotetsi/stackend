@@ -35,6 +35,16 @@ all:
       generate_shortest_url:            true
       extra_parameters_as_query_string: true
 
+user:
+  class: myUser
+  param:
+    timeout: 1800
+
+storage:
+  class: sfSessionStorage
+  param:
+    session_name: stackend
+
   view_cache_manager:
     class: sfViewCacheManager
     param:

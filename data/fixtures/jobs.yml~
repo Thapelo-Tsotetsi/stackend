@@ -2,11 +2,11 @@ StackendJob:
   job_sensio_labs:
     StackendCategory: bursary
     type:         full-time
-    company:      Sensio Labs
+    company:      South Africa
     logo:         sensio-labs.gif
-    url:          http://www.sensiolabs.com/
+    url:          http://www.test.com/
     position:     Web Developer
-    location:     Paris, France
+    location:     South, Africa
     description:  |
       You've already developed websites with symfony and you want to work
       with Open-Source technologies. You have a minimum of 3 years
@@ -20,6 +20,29 @@ StackendJob:
     token:        job_sensio_labs
     email:        job@example.com
     expires_at:   '2013-10-10'
+
+  job_sensio_labs:
+    StackendCategory: bursary
+    type:         full-time
+    company:      Sensio Labs
+    logo:         sensio-labs.gif
+    url:          http://www.sensiolabs.com/
+    position:     Web Developer
+    location:     South, Africa
+    description:  |
+      You've already developed websites with symfony and you want to work
+      with Open-Source technologies. You have a minimum of 3 years
+      experience in web development with PHP or Java and you wish to
+      participate to development of Web 2.0 sites using the best
+      frameworks available.
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_sensio_labsv2
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+ 
  
   job_extreme_sensio:
     StackendCategory:  learnership
@@ -28,7 +51,7 @@ StackendJob:
     logo:         extreme-sensio.gif
     url:          http://www.extreme-sensio.com/
     position:     Web Designer
-    location:     Paris, France
+    location:     South, Africa
     description:  |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -54,7 +77,7 @@ StackendJob:
     logo:         extreme-sensio.gif
     url:          http://www.extreme-sensio.com/
     position:     Web Designer
-    location:     Paris, France2
+    location:     South, Africa2
     description:  |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -78,7 +101,7 @@ StackendJob:
     StackendCategory: internship
     company:      Company <?php echo $i."\n" ?>
     position:     Web Developer
-    location:     Paris, France
+    location:     South, Africa
     description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
     how_to_apply: |
       Send your resume to lorem.ipsum [at] company_<?php echo $i ?>.sit

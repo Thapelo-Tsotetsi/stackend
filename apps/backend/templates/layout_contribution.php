@@ -12,9 +12,10 @@
     <div id="container">
       <div id="header">
         <h1>
-          <a href="<?php echo url_for('homepage') ?>">
+          <!--<a href="<?php echo url_for('homepage') ?>">
             <img src="/legacy/images/logo.jpg" alt="Jobeet Job Board" />
-          </a>
+          </a> -->
+
         </h1>
       </div>
  

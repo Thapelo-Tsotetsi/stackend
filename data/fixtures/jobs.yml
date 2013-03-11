@@ -2,11 +2,11 @@ StackendJob:
   job_sensio_labs:
     StackendCategory: bursary
     type:         full-time
-    company:      Sensio Labs
+    company:      South Africa
     logo:         sensio-labs.gif
-    url:          http://www.sensiolabs.com/
+    url:          http://www.test.com/
     position:     Web Developer
-    location:     Paris, France
+    location:     South, Africa
     description:  |
       You've already developed websites with symfony and you want to work
       with Open-Source technologies. You have a minimum of 3 years
@@ -24,11 +24,11 @@ StackendJob:
   job_sensio_labs:
     StackendCategory: bursary
     type:         full-time
-    company:      Sensio Labs
+    company:      Free State
     logo:         sensio-labs.gif
     url:          http://www.sensiolabs.com/
     position:     Web Developer
-    location:     Paris, France
+    location:     South, Africa
     description:  |
       You've already developed websites with symfony and you want to work
       with Open-Source technologies. You have a minimum of 3 years
@@ -51,7 +51,7 @@ StackendJob:
     logo:         extreme-sensio.gif
     url:          http://www.extreme-sensio.com/
     position:     Web Designer
-    location:     Paris, France
+    location:     South, Africa
     description:  |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -77,7 +77,7 @@ StackendJob:
     logo:         extreme-sensio.gif
     url:          http://www.extreme-sensio.com/
     position:     Web Designer
-    location:     Paris, France2
+    location:     South, Africa2
     description:  |
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -101,7 +101,7 @@ StackendJob:
     StackendCategory: internship
     company:      Company <?php echo $i."\n" ?>
     position:     Web Developer
-    location:     Paris, France
+    location:     South, Africa
     description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
     how_to_apply: |
       Send your resume to lorem.ipsum [at] company_<?php echo $i ?>.sit

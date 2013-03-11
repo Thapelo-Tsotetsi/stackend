@@ -16,26 +16,4 @@ class StackendCategoryContributionTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('StackendCategoryContribution');
     }
-    
-    
-    
-  public function getActiveJobs()
-  {
-    $q = $this->createQuery('j')
-      ->where('j.expires_at > ?', date('Y-m-d H:i:s', time()))
-      ->orderBy('j.expires_at DESC');
- 
-    return $q->execute();
-  }
-  
-  public function getWithJobs()
-  {
-    $q = $this->createQuery('c')
-      ->leftJoin('c.StackendContributions j')
-      ->where('j.expires_at > ?', date('Y-m-d H:i:s', time()));
- 
-    $q->andWhere('j.is_activated = ?', 1);
- 
-    return $q->execute();
-  }
 }

@@ -11,14 +11,15 @@
   <body>
     <div id="container">
       <div id="header">
-        <h1>
+        <h1> <!--
           <a href="<?php echo url_for('homepage') ?>">
             <img src="/images/logo.jpg" alt="Stackend Job Board" />
           </a>
+	-->
+
         </h1>
       </div>
  
-
 		<?php if ($sf_user->isAuthenticated() && $sf_user->isSuperAdmin()): ?>
 		  <div id="menu">
 			<ul>
@@ -35,18 +36,17 @@
 		  </div>
 		<?php endif ?>
 
-
-
-
-
-
-
-
 		<?php if ($sf_user->isAuthenticated() && !$sf_user->isSuperAdmin() ): ?>
 		  <div id="menu">
 			<ul>
-			  <li><?php echo link_to('Jobs', 'stackend_job') ?></li>
-			 <li><?php echo link_to('Logout', 'sf_guard_signout') ?></li>
+			  <!-- <li><?php echo link_to('Jobs', 'stackend_job') ?></li>
+			 <li><?php echo link_to('Logout', 'sf_guard_signout') ?></li> 
+-->
+
+			<li><a href="/backend.php/job">Jobs</a></li>
+			<li><a href="/backend.php/guard/logout">Logout</a></li>
+			<li><a href="/backend.php/job/new">Post a Job</a></li>
+              
 			</ul>
 		  </div>
 		<?php endif ?>

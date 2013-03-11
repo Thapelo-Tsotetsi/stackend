@@ -1,0 +1,105 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+affiliate:
+  class:   sfDoctrineRouteCollection
+  options:
+    model:          StackendAffiliate
+    actions:        [new, create]
+    object_actions: { wait: GET }
+    prefix_path:    /:sf_culture/affiliate
+    module:         sfStackendAffiliate
+  requirements:
+    sf_culture: (?:fr|en)
+ 
+api_jobs:
+  url:     /api/:token/jobs.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: sfStackendApi, action: list }
+  options: { model: StackendJob, type: list, method: getForToken }
+  requirements:
+    sf_format: (?:xml|json|yaml)
+ 
+category:
+  url:     /:sf_culture/category/:slug.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: sfStackendCategory, action: show, sf_format: html }
+  options: { model: StackendCategory, type: object }
+  requirements:
+    sf_format: (?:html|atom)
+    sf_culture: (?:fr|en)
+
+category_contribution:
+  url:     /category_contribution/:slug.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: sfStackendcategory_contribution, action: show, sf_format: html }
+  options: { model: StackendCategoryContribution, type: object }
+  requirements:
+    sf_format: (?:html|atom)
+
+ 
+job_search:
+  url:   /:sf_culture/search
+  param: { module: sfStackendJob, action: search }
+  requirements:
+    sf_culture: (?:fr|en)
+ 
+job:
+  class:   sfDoctrineRouteCollection
+  options:
+    model:          StackendJob
+    column:         token
+    object_actions: { publish: PUT, extend: PUT }
+    prefix_path:    /:sf_culture/job
+    module:         sfStackendJob
+  requirements:
+    token: \w+
+    sf_culture: (?:fr|en)
+ 
+job_show_user:
+  url:     /:sf_culture/job/:company_slug/:location_slug/:id/:position_slug
+  class:   sfDoctrineRoute
+  options:
+    model: StackendJob
+    type: object
+    method_for_query: retrieveActiveJob
+  param:   { module: sfStackendJob, action: show }
+  requirements:
+    id:        \d+
+    sf_method: GET
+    sf_culture: (?:fr|en)
+
+contribution:
+  class:   sfDoctrineRouteCollection
+  options:
+    model:          StackendContribution
+    column:         token
+    object_actions: { publish: put }
+  requirements:
+    token: \w+
+
+contribution_show_user:
+  url:     /contribution/:company_slug/:location_slug/:id/:position_slug
+  class:   sfDoctrineRoute
+  options:
+    model: StackendContribution
+    type:  object
+    method_for_query: retrieveActiveContribution
+  param:   { module: sfStackendcontribution, action: show }
+  requirements:
+    id: \d+
+    sf_method: [GET]
+
+change_language:
+  url:   /change_language
+  param: { module: sfStackendLanguage, action: changeLanguage }
+ 
+localized_homepage:
+  url:   /:sf_culture/
+  param: { module: sfStackendJob, action: index }
+  requirements:
+    sf_culture: (?:fr|en)
+ 
+homepage:
+  url:   /
+  param: { module: sfStackendJob, action: index }

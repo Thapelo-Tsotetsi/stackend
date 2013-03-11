@@ -49,9 +49,9 @@ body
 
 #header h1 a {
   display: block;
-  width: 150px;
-  height: 110px;
-  background: url(../images/logo.jpg) no-repeat;
+  width: 161.5px;
+  height: 80px;
+  background: url(../images/logo2.png) no-repeat;
 }
 
 
@@ -147,7 +147,7 @@ body
 
 #sub_header .search h2
 {
-  background: url(../images/header-job.jpg) no-repeat;
+background: url(../images/header-job.jpg) no-repeat;
   height: 23px;
   width: 250px;
   margin-bottom: 7px;

@@ -536,3 +536,34 @@ Jan 25 16:11:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for
 Jan 25 16:11:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
 Jan 25 16:12:04 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
 Jan 25 16:12:04 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Mar 06 17:21:17 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Mar 06 17:21:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /affiliate/index with parameters array (  'module' => 'affiliate',  'action' => 'index',)
+Mar 06 17:21:18 symfony [info] {sfFrontWebController} Action "affiliate/index" does not exist
+Mar 06 17:21:18 symfony [err] {sfError404Exception} Action "affiliate/index" does not exist.
+Mar 06 17:21:18 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Mar 06 17:21:19 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /api/index with parameters array (  'module' => 'api',  'action' => 'index',)
+Mar 06 17:21:19 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Mar 06 17:21:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 06 17:21:19 symfony [info] {apiActions} Call "apiActions->executeIndex()"
+Mar 06 17:21:19 symfony [info] {apiActions} Forward to action "default/module"
+Mar 06 17:21:19 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Mar 06 17:21:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 06 17:21:19 symfony [info] {defaultActions} Call "defaultActions->executeModule()"
+Mar 06 17:21:19 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/lib/vendor/symfony/lib/controller/default/templates/moduleSuccess.php"
+Mar 06 17:21:19 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Mar 06 17:21:19 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Mar 06 17:21:19 symfony [info] {sfWebResponse} Send content (2001 o)
+Mar 06 17:21:20 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Mar 06 17:21:20 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Mar 06 17:21:21 symfony [info] {sfPatternRouting} Match route "category_contribution" (/category_contribution/:slug.:sf_format) for /category_contribution/index with parameters array (  'module' => 'category_contribution',  'action' => 'show',  'sf_format' => 'html',  'slug' => 'index',)
+Mar 06 17:21:21 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Mar 06 17:21:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 06 17:21:21 symfony [info] {category_contributionActions} Call "category_contributionActions->executeShow()"
+Mar 06 17:21:21 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+Mar 06 17:21:22 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Mar 06 17:21:22 symfony [info] {sfPatternRouting} Match route "contribution_show" (/contribution/:token.:sf_format) for /contribution/index with parameters array (  'module' => 'contribution',  'action' => 'show',  'sf_format' => 'html',  'token' => 'index',)
+Mar 06 17:21:22 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Mar 06 17:21:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 06 17:21:22 symfony [info] {contributionActions} Call "contributionActions->executeShow()"
+Mar 06 17:21:22 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (111)
+Mar 06 17:21:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)

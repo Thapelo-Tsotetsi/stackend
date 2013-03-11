@@ -21,7 +21,7 @@
       <div id="menu">
         <ul>
           <li>
-            <?php echo link_to('Jobss', 'stackend_contribution') ?>
+            <?php echo link_to('Jobs', 'stackend_contribution') ?>
           </li>
           <li>
             <?php echo link_to('Categories', 'stackend_category_contribution') ?>
