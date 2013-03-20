@@ -11,11 +11,11 @@
   <body>
     <div id="container">
       <div id="header">
-        <h1> <!--
+        <h1>
           <a href="<?php echo url_for('homepage') ?>">
-            <img src="/images/logo.jpg" alt="Stackend Job Board" />
+            <img src="/images/logo2.png" alt="Stackend Job Board" />
           </a>
-	-->
+	
 
         </h1>
       </div>
@@ -27,11 +27,9 @@
 			  <li><?php echo link_to('Categories', 'stackend_category') ?></li>
 			  <li><?php echo link_to('Logout', 'sf_guard_signout') ?></li>
 			  <li><?php echo link_to('Users', 'sf_guard_user') ?></li>
-			  <li>
-  <a href="<?php echo url_for('stackend_affiliate') ?>">
+			  <li><a href="<?php echo url_for('stackend_affiliate') ?>">
     Affiliates - <strong><?php echo Doctrine_Core::getTable('StackendAffiliate')->countToBeActivated() ?></strong>
-  </a>
-</li>
+  			</a></li>
 			</ul>
 		  </div>
 		<?php endif ?>

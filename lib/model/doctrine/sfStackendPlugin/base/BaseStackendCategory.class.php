@@ -32,7 +32,6 @@ abstract class BaseStackendCategory extends sfDoctrineRecord
         $this->hasColumn('name', 'string', 255, array(
              'type' => 'string',
              'notnull' => true,
-             'unique' => true,
              'length' => 255,
              ));
     }
@@ -54,8 +53,25 @@ abstract class BaseStackendCategory extends sfDoctrineRecord
              'foreign' => 'category_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
-        $sluggable0 = new Doctrine_Template_Sluggable();
+        $i18n0 = new Doctrine_Template_I18n(array(
+             'fields' => 
+             array(
+              0 => 'name',
+             ),
+             ));
+        $sluggable1 = new Doctrine_Template_Sluggable(array(
+             'fields' => 
+             array(
+              0 => 'name',
+             ),
+             'uniqueBy' => 
+             array(
+              0 => 'lang',
+              1 => 'name',
+             ),
+             ));
+        $i18n0->addChild($sluggable1);
         $this->actAs($timestampable0);
-        $this->actAs($sluggable0);
+        $this->actAs($i18n0);
     }
 }

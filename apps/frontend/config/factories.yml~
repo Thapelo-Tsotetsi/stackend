@@ -35,6 +35,12 @@ all:
       generate_shortest_url:            true
       extra_parameters_as_query_string: true
 
+user:
+  class: myUser
+  param:
+    timeout: 3600
+
+
 storage:
   class: sfSessionStorage
   param:

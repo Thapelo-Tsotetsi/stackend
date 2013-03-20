@@ -19,7 +19,7 @@
         <div class="content">
 			<h1>
 				<a href="<?php echo url_for('homepage') ?>">
-					<img src="/legacy/images/logo.jpg" alt="Stackend Job Board" /> 
+					<img src="/images/logo2.jpg" alt="Stackend Job Board" /> 
 				</a>
 				
 			</h1>
@@ -97,7 +97,7 @@
             <li class="last">
 
 
-  <a href="/backend_dev.php/guard/login">Admin-Login</a>
+  <a href="/backend.php/guard/login">Admin-Login</a>
 
 </li>
           </ul>

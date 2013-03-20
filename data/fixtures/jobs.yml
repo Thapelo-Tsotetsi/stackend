@@ -25,7 +25,6 @@ StackendJob:
     StackendCategory: bursary
     type:         full-time
     company:      Free State
-    logo:         sensio-labs.gif
     url:          http://www.sensiolabs.com/
     position:     Web Developer
     location:     South, Africa
@@ -48,7 +47,6 @@ StackendJob:
     StackendCategory:  learnership
     type:         part-time
     company:      Extreme Sensio
-    logo:         extreme-sensio.gif
     url:          http://www.extreme-sensio.com/
     position:     Web Designer
     location:     South, Africa
@@ -74,7 +72,6 @@ StackendJob:
     StackendCategory:  learnership
     type:         part-time
     company:      Extreme Sensio2
-    logo:         extreme-sensio.gif
     url:          http://www.extreme-sensio.com/
     position:     Web Designer
     location:     South, Africa2

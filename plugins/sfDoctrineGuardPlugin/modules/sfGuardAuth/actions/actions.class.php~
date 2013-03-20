@@ -19,15 +19,4 @@ require_once(dirname(__FILE__).'/../lib/BasesfGuardAuthActions.class.php');
  */
 class sfGuardAuthActions extends BasesfGuardAuthActions
 {
-
-	public function executeSecure($request) {
-		parent::executeSecure($request);
-
-		// retrieve the needed credentials
-		$this->credentials = $this->getContext()->getActionStack()->getFirstEntry()->getActionInstance()->getCredential();
-		// make sure the credentials are an array (in case of unique non-array credential)
-		
-		if(!is_array($this->credentials))
-			$this->credentials = array($this->credentials);
-	}
 }

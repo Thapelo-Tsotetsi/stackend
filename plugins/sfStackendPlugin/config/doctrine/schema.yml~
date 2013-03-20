@@ -3,15 +3,6 @@
 #   
 #  columns:
 #    name: { type: string(255), notnull: true, unique: true }
-StackendCategory:
-  actAs:
-    Timestampable: ~
-    I18n:
-      fields: [name]
-      actAs:
-        Sluggable: { fields: [name], uniqueBy: [lang, name] }
-  columns:
-    name: { type: string(255), notnull: true }
 
 StackendJob:
   actAs: { Timestampable: ~ }

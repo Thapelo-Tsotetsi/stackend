@@ -43,9 +43,18 @@ stackend_job:
     column:               id
     with_wildcard_routes: true
 
-#sf_guard_signout:
-#    url:    /backend.php/guard/logout
-#    param:    {module:  guard, action: signout}
+#added to fix redirection
+sf_guard_signin:
+    url:   /login
+    param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+    url:   /logout
+    param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+    url:   /request_password
+    param: { module: sfGuardAuth, action: password }
 
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing

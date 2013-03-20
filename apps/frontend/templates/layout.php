@@ -19,7 +19,7 @@
         <div class="content">
 			<h1>
 				<a href="<?php echo url_for('homepage') ?>">
-					<img src="/legacy/images/logo.jpg" alt="Stackend Job Board" /> 
+					<img src="/images/logo2.png" alt="Stackend Job Board" /> 
 				</a>
 				
 			</h1>

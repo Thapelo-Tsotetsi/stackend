@@ -4,6 +4,7 @@
 # default values
 #all:
 all:
-#  sf_guard_plugin:
+  sf_guard_plugin:
+    routes_register: false
 #    success_signin_url:      @my_route?param=value # the plugin use the referer as default
 #    success_signout_url:     module/action         # the plugin use the referer as default

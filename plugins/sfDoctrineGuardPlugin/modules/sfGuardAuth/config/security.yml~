@@ -2,7 +2,7 @@ secure:
   is_secure: true
 
 signin:
-  is_secure: false
+  is_secure: true
 
 signout:
-  is_secure: false
+  is_secure: true

@@ -1,9 +1,20 @@
 StackendCategory:
   internship:
-    name: Internships
+    Translation
+      en:
+        name: Internships
+
   vacation_work:
-    name: Vacation Work
+    Translation
+      en:
+        name: Vacation Work
+
   learnership:
-    name: Learnerships
-  bursaries:
-    name: Bursaries
+    Translation
+      en:
+        name: Learnerships
+
+  bursary:
+    Translation
+      en:
+        name: Bursaries
