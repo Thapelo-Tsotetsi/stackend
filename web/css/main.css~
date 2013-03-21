@@ -50,7 +50,7 @@ body
 #header h1 a {
   display: block;
   width: 161.5px;
-  height: 94px;
+  height: 96px;
   background: url(../images/logo2.png) no-repeat;
 }
 

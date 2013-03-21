@@ -25,11 +25,9 @@
 			<ul>
 			  <li><?php echo link_to('Jobs', 'stackend_job') ?></li>
 			  <li><?php echo link_to('Categories', 'stackend_category') ?></li>
+                          <li><a href="/backend.php/job/new">Post a Job</a></>
 			  <li><?php echo link_to('Logout', 'sf_guard_signout') ?></li>
 			  <li><?php echo link_to('Users', 'sf_guard_user') ?></li>
-			  <li><a href="<?php echo url_for('stackend_affiliate') ?>">
-    Affiliates - <strong><?php echo Doctrine_Core::getTable('StackendAffiliate')->countToBeActivated() ?></strong>
-  			</a></li>
 			</ul>
 		  </div>
 		<?php endif ?>
@@ -48,10 +46,12 @@
 			</ul>
 		  </div>
 		<?php endif ?>
+
  
       <div id="content">
         <?php echo $sf_content ?>
       </div>
+
  
       <div id="footer">
         <img src="/images/jobeet-mini.png" />
