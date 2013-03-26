@@ -85,7 +85,7 @@
       <div id="footer">
         <div class="content">
           <span class="symfony">
-            <img src="/images/jobeet-mini.png" />
+            <img src="/images/jobeet-mini.png" alt="stackend" />
             powered by <a href="/">
             <img src="/images/symfony.gif" alt="symfony framework" />
             </a>
