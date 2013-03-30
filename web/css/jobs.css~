@@ -61,7 +61,7 @@
 {
   padding: 0;
   color: #524F46;
-  width: 40%;
+  width: 45%;
 }
 
 .jobs .position a

@@ -52,9 +52,6 @@
         <?php echo $sf_content ?>
       </div>
 
-         <div>
-                <a href="/backend.php/job/new">Post a Job</a>
-              </div>
  
       <div id="footer">
         <img src="/images/jobeet-mini.png" />

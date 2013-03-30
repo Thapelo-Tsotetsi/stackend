@@ -110,6 +110,6 @@
 .meta_social_networks
 {
   float: right;
-  margin-right: 0%;
+
   margin: 20px 10px 7px;
 } 

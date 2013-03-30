@@ -4,14 +4,14 @@ all:
     param:
       dsn: 'mysql:host=127.0.0.1;dbname=stackend'
       username: root
-      password: 
+      password: 407
 test:
   doctrine:
     class: sfDoctrineDatabase
     param:
       dsn: 'mysql:host=127.0.0.1;dbname=stackend_test'
-      username: root
-      password:
+      username: thapelo
+      password: 407thapelo
 production:
   doctrine:
     class: sfDoctrineDatabase

@@ -93,14 +93,16 @@
           <ul>
             <li><a href="">About Stackend</a></li>
 				<li class="feed"><a href="<?php echo url_for('job', array('sf_format' => 'atom')) ?>">Full feed</a></li>
-            <li><a href="">Stackend API</a></li>
+            <!--<li><a href="">Stackend API</a></li>-->
             <li class="last">
 
 
-  <a href="/backend.php/guard/login">Admin-Login</a>
+  <a href="/backend.php">Admin</a>
 
 </li>
+&copy; <?php echo date("Y"); ?> ourbf Copyright.
           </ul>
+
         </div>
       </div>
     </div>

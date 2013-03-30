@@ -38,6 +38,7 @@
 			   <li><?php echo link_to('Jobs', 'stackend_job') ?></li>
 			 <li><?php echo link_to('Logout', 'sf_guard_signout') ?></li> 
 
+                         <li><a href="/backend.php/job/new">Post a Job</a></li>
 
 		<!--	<li><a href="/backend.php/job">Jobs</a></li>
 			<li><a href="/backend.php/guard/logout">Logout</a></li>
