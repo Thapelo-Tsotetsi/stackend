@@ -2,9 +2,9 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn: 'mysql:host=127.0.0.1;dbname=stackend'
-      username: thapelo
-      password: 407thapelo
+      dsn: 'mysql:host=127.0.0.1;dbname=stackend
+      username: root
+      password: 407
 test:
   doctrine:
     class: sfDoctrineDatabase

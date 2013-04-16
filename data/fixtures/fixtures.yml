@@ -4,12 +4,12 @@
 # # 
 # # See documentation for your ORM's *:data-load task for more information.
 # 
-# User:
-#   fabien:
-#     username: fabien
-#     password: changeme
-#     name:     Fabien Potencier
-#     email:    fabien.potencier@symfony-project.com
+#User:
+#  fabien:
+#    username: thapelo
+#    password: SecretPass
+#    name:     Thapelo Tsotetsi
+#    email:    thapelo@gmail.com
 #   kris:
 #     username: Kris.Wallsmith
 #     password: changeme

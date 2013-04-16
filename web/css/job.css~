@@ -35,12 +35,20 @@
 }
 
 #job .description,
+#job .requirement_all,
+#job p.requirement_all,
 #job p.how_to_apply
 {
   font-size: 105%;
   line-height: 1.4em;
   margin: 0 10px;
   color: #333;
+}
+
+#nav .list, ul, li{
+  float: none;
+
+  list-style:inherit;
 }
 
 #job .logo
@@ -87,8 +95,6 @@
   color: red;
 }
 
-
-
 .meta
 {
   float: right;
@@ -110,6 +116,5 @@
 .meta_social_networks
 {
   float: right;
-
   margin: 20px 10px 7px;
 } 

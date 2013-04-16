@@ -39,7 +39,7 @@ generator:
       form:
         class:     BackendStackendJobForm
         display:
-          Content: [category_id, type, company, logo, url, position, location, description, how_to_apply, is_public, email]
+          Content: [category_id, type, company, logo, url, position, location, description, how_to_apply, requirements_one, requirements_two, requirements_three, is_public, email]
           Admin:   [_generated_token, is_activated, expires_at]
       edit:
         title: Editing Job "%%company%% is looking for a %%position%%"

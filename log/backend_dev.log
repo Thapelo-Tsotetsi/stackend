@@ -1093,3 +1093,148 @@ Mar 21 10:12:13 symfony [info] {sfWebDebugLogger} Partial "job/_list_batch_actio
 Mar 21 10:12:13 symfony [info] {sfWebDebugLogger} Partial "job/_list_actions" 7.16 ms (1)
 Mar 21 10:12:13 symfony [info] {sfWebDebugLogger} Partial "job/_list_footer" 1.42 ms (1)
 Mar 21 10:12:14 symfony [info] {sfWebResponse} Send content (202612 o)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_filter" (/guard/groups/filter.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_batch" (/guard/groups/batch.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group" (/guard/groups.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_new" (/guard/groups/new.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_create" (/guard/groups.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_edit" (/guard/groups/:id/edit.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_update" (/guard/groups/:id.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_delete" (/guard/groups/:id.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_show" (/guard/groups/:id.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_object" (/guard/groups/:id/:action.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_collection" (/guard/groups/:action/action.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_filter" (/guard/permissions/filter.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_batch" (/guard/permissions/batch.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission" (/guard/permissions.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_new" (/guard/permissions/new.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_create" (/guard/permissions.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_edit" (/guard/permissions/:id/edit.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_update" (/guard/permissions/:id.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_delete" (/guard/permissions/:id.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_show" (/guard/permissions/:id.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_object" (/guard/permissions/:id/:action.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_collection" (/guard/permissions/:action/action.:sf_format)
+Apr 12 13:15:10 symfony [info] {sfPatternRouting} Match route "stackend_job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Apr 12 13:15:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 12 13:15:11 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Apr 12 13:15:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 12 13:15:11 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Apr 12 13:15:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 12 13:15:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM (SELECT s.id FROM stackend_job s LEFT JOIN stackend_category s2 ON s.category_id = s2.id GROUP BY s.id) dctrn_count_query - ()
+Apr 12 13:15:11 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/indexSuccess.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_assets.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_flashes.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_header.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_filters.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+Apr 12 13:15:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackend_category s - ()
+Apr 12 13:15:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.lang AS s__lang, s.slug AS s__slug FROM stackend_category_translation s WHERE (s.id IN (?)) - (1)
+Apr 12 13:15:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.lang AS s__lang, s.slug AS s__slug FROM stackend_category_translation s WHERE (s.id IN (?)) - (2)
+Apr 12 13:15:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.lang AS s__lang, s.slug AS s__slug FROM stackend_category_translation s WHERE (s.id IN (?)) - (3)
+Apr 12 13:15:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.lang AS s__lang, s.slug AS s__slug FROM stackend_category_translation s WHERE (s.id IN (?)) - (4)
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_filters_field.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_th_stacked.php"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_th_tabular.php"
+Apr 12 13:15:11 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 12 13:15:11 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 12 13:15:11 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 12 13:15:11 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 12 13:15:11 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 12 13:15:11 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 12 13:15:11 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 12 13:15:11 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 12 13:15:11 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 12 13:15:11 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 12 13:15:11 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 12 13:15:11 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 12 13:15:11 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_pagination.php"
+Apr 12 13:15:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.id AS s2__id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM stackend_job s LEFT JOIN stackend_category s2 ON s.category_id = s2.id ORDER BY s.expires_at desc LIMIT 10 - ()
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_batch_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_stacked.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_field_boolean.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_td_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_batch_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_actions.php"
+Apr 12 13:15:12 symfony [info] {sfPartialView} Render "/home/liveprojects/stackend/cache/backend/dev/modules/autoJob/templates/_list_footer.php"
+Apr 12 13:15:12 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackend/apps/backend/templates/layout.php"
+Apr 12 13:15:12 symfony [info] {sfPHPView} Render "/home/liveprojects/stackend/apps/backend/templates/layout.php"
+Apr 12 13:15:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Apr 12 13:15:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 12 13:15:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Configuration 1108.92 ms (13)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Factories 787.41 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Action "job/index" 235.66 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 6.51 ms (9)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 719.78 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_assets" 5.00 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_flashes" 2.04 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_list_header" 2.02 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_filters" 208.20 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_filters_field" 175.35 ms (8)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_list" 405.59 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_list_th_stacked" 16.11 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_list_th_tabular" 13.43 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_pagination" 7.63 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_list_td_batch_actions" 25.84 ms (10)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_list_td_stacked" 102.48 ms (10)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_list_field_boolean" 25.06 ms (10)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_list_td_actions" 172.44 ms (10)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_list_batch_actions" 3.46 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_list_actions" 11.52 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebDebugLogger} Partial "job/_list_footer" 2.55 ms (1)
+Apr 12 13:15:12 symfony [info] {sfWebResponse} Send content (207489 o)

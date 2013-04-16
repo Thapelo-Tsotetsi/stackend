@@ -13,6 +13,9 @@
  * @property string $position
  * @property string $location
  * @property string $description
+ * @property string $requirements_one
+ * @property string $requirements_two
+ * @property string $requirements_three
  * @property string $how_to_apply
  * @property string $token
  * @property boolean $is_public
@@ -21,36 +24,42 @@
  * @property timestamp $expires_at
  * @property StackendCategory $StackendCategory
  * 
- * @method integer          getCategoryId()       Returns the current record's "category_id" value
- * @method string           getType()             Returns the current record's "type" value
- * @method string           getCompany()          Returns the current record's "company" value
- * @method string           getLogo()             Returns the current record's "logo" value
- * @method string           getUrl()              Returns the current record's "url" value
- * @method string           getPosition()         Returns the current record's "position" value
- * @method string           getLocation()         Returns the current record's "location" value
- * @method string           getDescription()      Returns the current record's "description" value
- * @method string           getHowToApply()       Returns the current record's "how_to_apply" value
- * @method string           getToken()            Returns the current record's "token" value
- * @method boolean          getIsPublic()         Returns the current record's "is_public" value
- * @method boolean          getIsActivated()      Returns the current record's "is_activated" value
- * @method string           getEmail()            Returns the current record's "email" value
- * @method timestamp        getExpiresAt()        Returns the current record's "expires_at" value
- * @method StackendCategory getStackendCategory() Returns the current record's "StackendCategory" value
- * @method StackendJob      setCategoryId()       Sets the current record's "category_id" value
- * @method StackendJob      setType()             Sets the current record's "type" value
- * @method StackendJob      setCompany()          Sets the current record's "company" value
- * @method StackendJob      setLogo()             Sets the current record's "logo" value
- * @method StackendJob      setUrl()              Sets the current record's "url" value
- * @method StackendJob      setPosition()         Sets the current record's "position" value
- * @method StackendJob      setLocation()         Sets the current record's "location" value
- * @method StackendJob      setDescription()      Sets the current record's "description" value
- * @method StackendJob      setHowToApply()       Sets the current record's "how_to_apply" value
- * @method StackendJob      setToken()            Sets the current record's "token" value
- * @method StackendJob      setIsPublic()         Sets the current record's "is_public" value
- * @method StackendJob      setIsActivated()      Sets the current record's "is_activated" value
- * @method StackendJob      setEmail()            Sets the current record's "email" value
- * @method StackendJob      setExpiresAt()        Sets the current record's "expires_at" value
- * @method StackendJob      setStackendCategory() Sets the current record's "StackendCategory" value
+ * @method integer          getCategoryId()         Returns the current record's "category_id" value
+ * @method string           getType()               Returns the current record's "type" value
+ * @method string           getCompany()            Returns the current record's "company" value
+ * @method string           getLogo()               Returns the current record's "logo" value
+ * @method string           getUrl()                Returns the current record's "url" value
+ * @method string           getPosition()           Returns the current record's "position" value
+ * @method string           getLocation()           Returns the current record's "location" value
+ * @method string           getDescription()        Returns the current record's "description" value
+ * @method string           getRequirementsOne()    Returns the current record's "requirements_one" value
+ * @method string           getRequirementsTwo()    Returns the current record's "requirements_two" value
+ * @method string           getRequirementsThree()  Returns the current record's "requirements_three" value
+ * @method string           getHowToApply()         Returns the current record's "how_to_apply" value
+ * @method string           getToken()              Returns the current record's "token" value
+ * @method boolean          getIsPublic()           Returns the current record's "is_public" value
+ * @method boolean          getIsActivated()        Returns the current record's "is_activated" value
+ * @method string           getEmail()              Returns the current record's "email" value
+ * @method timestamp        getExpiresAt()          Returns the current record's "expires_at" value
+ * @method StackendCategory getStackendCategory()   Returns the current record's "StackendCategory" value
+ * @method StackendJob      setCategoryId()         Sets the current record's "category_id" value
+ * @method StackendJob      setType()               Sets the current record's "type" value
+ * @method StackendJob      setCompany()            Sets the current record's "company" value
+ * @method StackendJob      setLogo()               Sets the current record's "logo" value
+ * @method StackendJob      setUrl()                Sets the current record's "url" value
+ * @method StackendJob      setPosition()           Sets the current record's "position" value
+ * @method StackendJob      setLocation()           Sets the current record's "location" value
+ * @method StackendJob      setDescription()        Sets the current record's "description" value
+ * @method StackendJob      setRequirementsOne()    Sets the current record's "requirements_one" value
+ * @method StackendJob      setRequirementsTwo()    Sets the current record's "requirements_two" value
+ * @method StackendJob      setRequirementsThree()  Sets the current record's "requirements_three" value
+ * @method StackendJob      setHowToApply()         Sets the current record's "how_to_apply" value
+ * @method StackendJob      setToken()              Sets the current record's "token" value
+ * @method StackendJob      setIsPublic()           Sets the current record's "is_public" value
+ * @method StackendJob      setIsActivated()        Sets the current record's "is_activated" value
+ * @method StackendJob      setEmail()              Sets the current record's "email" value
+ * @method StackendJob      setExpiresAt()          Sets the current record's "expires_at" value
+ * @method StackendJob      setStackendCategory()   Sets the current record's "StackendCategory" value
  * 
  * @package    stackend
  * @subpackage model
@@ -94,6 +103,21 @@ abstract class BaseStackendJob extends sfDoctrineRecord
              'length' => 255,
              ));
         $this->hasColumn('description', 'string', 4000, array(
+             'type' => 'string',
+             'notnull' => true,
+             'length' => 4000,
+             ));
+        $this->hasColumn('requirements_one', 'string', 4000, array(
+             'type' => 'string',
+             'notnull' => true,
+             'length' => 4000,
+             ));
+        $this->hasColumn('requirements_two', 'string', 4000, array(
+             'type' => 'string',
+             'notnull' => true,
+             'length' => 4000,
+             ));
+        $this->hasColumn('requirements_three', 'string', 4000, array(
              'type' => 'string',
              'notnull' => true,
              'length' => 4000,

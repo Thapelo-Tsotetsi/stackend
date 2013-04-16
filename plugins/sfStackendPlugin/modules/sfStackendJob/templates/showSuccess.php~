@@ -34,19 +34,44 @@
   </div>
  
   <div class= "meta_social_networks">
-	<?php 
+<!--	<?php 
 	$test = url_for('job_show_user', $job);
 	//echo $test;
-	echo "<div class='fb-send' data-href='http://www.stackend.com$test'>
+	echo "<div class='fb-send' style='vertical-align:top' data-href='http://www.stackapp.co.za$test'>
 
 </div>";
 ?>
+-->
+
+	<?php 
+	$test = url_for('job_show_user', $job);
+	//echo $test;
+	echo "<div class='fb-like' style='vertical-align:top' data-href='http://www.stackapp.co.za$test' data-send='true' data-layout='button_count' data-width='450' data-show-faces='true'>
+
+</div>";
+?>
+
+
+
+
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
 </div>
 
+
+	<h4> Requirements </h4>
+		<ul id="list" style='padding: 4px 25px'>
+  			<li><p class="requirement_all"><?php echo $job->getRequirementsOne() ?></p>
+  			</li>
+
+    		<li><p class="requirement_all"><?php echo $job->getRequirementsTwo() ?></p>
+  			</li>
+
+			<li><p class="requirement_all"><?php echo $job->getRequirementsThree() ?></p>
+		    </li>
+  
+		</ul>
+
   <h4>How to apply?</h4>
-
-
 
  
   <p class="how_to_apply"><?php echo $job->getHowToApply() ?></p>
@@ -81,6 +106,7 @@
   js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
 
 
   <!--<div style="padding: 20px 0">

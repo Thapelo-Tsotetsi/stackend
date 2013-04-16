@@ -13,6 +13,18 @@ StackendJob:
       experience in web development with PHP or Java and you wish to
       participate to development of Web 2.0 sites using the best
       frameworks available.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
     how_to_apply: |
       Send your resume to fabien.potencier [at] sensio.com
     is_public:    true
@@ -34,15 +46,26 @@ StackendJob:
       experience in web development with PHP or Java and you wish to
       participate to development of Web 2.0 sites using the best
       frameworks available.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
     how_to_apply: |
-      Send your resume to fabien.potencier [at] sensio.com
+      Send your resume to fabien.potencier [at] sensio.com      
     is_public:    true
     is_activated: true
     token:        job_sensio_labsv2
     email:        job@example.com
     expires_at:   '2013-10-10'
- 
- 
+  
   job_extreme_sensio:
     StackendCategory:  learnership
     type:         part-time
@@ -56,10 +79,21 @@ StackendJob:
       enim ad minim veniam, quis nostrud exercitation ullamco laboris
       nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
       in reprehenderit in.
- 
       Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       Excepteur sint occaecat cupidatat non proident, sunt in culpa
       qui officia deserunt mollit anim id est laborum.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
     how_to_apply: |
       Send your resume to fabien.potencier [at] sensio.com
     is_public:    true
@@ -81,10 +115,23 @@ StackendJob:
       enim ad minim veniam, quis nostrud exercitation ullamco laboris
       nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
       in reprehenderit in.
- 
       Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       Excepteur sint occaecat cupidatat non proident, sunt in culpa
       qui officia deserunt mollit anim id est laborum.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com  
     how_to_apply: |
       Send your resume to fabien.potencier [at] sensio.com
     is_public:    true
@@ -93,13 +140,24 @@ StackendJob:
     email:        job@example.com
     expires_at:   '2011-10-10'
 
-<?php for ($i = 100; $i <= 130; $i++): ?>
+<?php for ($i = 100; $i <= 110; $i++): ?>
   job_<?php echo $i ?>:
     StackendCategory: internship
     company:      Company <?php echo $i."\n" ?>
     position:     Web Developer
     location:     South, Africa
     description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    requirements_one:  |
+      you want to work
+      test tetsetse set set set s
+    requirements_two:  |
+      you want to work
+      test test fs df sdfsd f dfsd
+    requirements_three:  |
+      you want to work
+      test t set est etset
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
     how_to_apply: |
       Send your resume to lorem.ipsum [at] company_<?php echo $i ?>.sit
     is_public:    true

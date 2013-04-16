@@ -49,7 +49,7 @@ body
 
 #header h1 a {
   display: block;
-  width: 161.5px;
+  width: 170.5px;
   height: 96px;
   background: url(../images/logo2.png) no-repeat;
 }
@@ -147,7 +147,7 @@ body
 
 #sub_header .search h2
 {
-background: url(../images/header-job.jpg) no-repeat;
+  background: url(../images/header-job.jpg) no-repeat;
   height: 23px;
   width: 250px;
   margin-bottom: 7px;

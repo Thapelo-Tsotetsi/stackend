@@ -39,7 +39,7 @@
 				  <input type="text" name="query" value="<?php echo $sf_request->getParameter('query') ?>" id="search_keywords" />
 				  <input type="submit" value="search" />
 				  <div class="help">
-					Enter some keywords (city, province, position, ...)
+					Enter some keywords (city, company, position, ...)
 				  </div>
 				</form>
             </div>
@@ -63,16 +63,16 @@
         <div class="content">
 			
 			
-			<div id="job_history">
-  Recent viewed jobs:
-  <ul>
-    <?php foreach ($sf_user->getJobHistory() as $job): ?>
-      <li>
-        <?php echo link_to($job->getPosition().' - '.$job->getCompany(), 'job_show_user', $job) ?>
-      </li>
-    <?php endforeach ?>
-  </ul>
-</div>
+	<div id="job_history">
+  		Recent viewed jobs:
+  		<ul>
+    		<?php foreach ($sf_user->getJobHistory() as $job): ?>
+    	  		<li>
+    	    		<?php echo link_to($job->getPosition().' - '.$job->getCompany(), 'job_show_user', $job) ?>
+    	  		</li>
+    		<?php endforeach ?>
+  		</ul>
+	</div>
  
 <div class="content">
   <?php echo $sf_content ?>
@@ -84,23 +84,16 @@
  
       <div id="footer">
         <div class="content">
-          <span class="symfony">
-            <img src="/images/jobeet-mini.png" alt="stackend" />
-            powered by <a href="/">
-            <img src="/images/symfony.gif" alt="symfony framework" />
-            </a>
-          </span>
-          <ul>
-            <li><a href="">About Stackend</a></li>
+          	<span class="symfony">
+            	<!--<img src="/images/jobeet-mini.png" alt="stackend" /> -->
+            		Powered by <a href="/"><img src="/images/symfony.gif" alt="symfony framework" /></a>
+          	</span>
+          
+			<ul>
+            	<li><a href="">About Stackend</a></li>
 				<li class="feed"><a href="<?php echo url_for('job', array('sf_format' => 'atom')) ?>">Full feed</a></li>
-            <!--<li><a href="">Stackend API</a></li>-->
-            <li class="last">
-
-
-  <a href="/backend.php">Admin</a>
-
-</li>
-&copy; <?php echo '<p>' date("Y"); ourbf Copyright. '</p>' ?> 
+            	<li class="last"><a href="/backend.php">Admin</a></li>
+&copy; <?php echo date("Y"); ?> ourbf Copyright.
           </ul>
 
         </div>

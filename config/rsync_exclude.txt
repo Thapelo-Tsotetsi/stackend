@@ -1,6 +1,7 @@
 # Project files
 /cache/*
 /log/*
+/config/databases.yml
 /web/uploads/*
 /data/job.dev.index/*
 /data/job.prod.index/*

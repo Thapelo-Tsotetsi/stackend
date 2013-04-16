@@ -17,7 +17,11 @@ abstract class PluginStackendJobTable extends Doctrine_Table
        static public $types = array(
     'full-time' => 'Full time',
     'part-time' => 'Part time',
-    'freelance' => 'Freelance',
+    'intern' => 'Intern',
+    'temporary' => 'Temporary',
+	'undergraduates' => 'Undergraduate',
+	'graduates' => 'Graduates',
+    'post-graduates' => 'Post-Graduate',
   );
  
   public function getTypes()

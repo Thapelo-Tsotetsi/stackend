@@ -24,6 +24,9 @@ StackendJob:
     position:     { type: string(255), notnull: true }
     location:     { type: string(255), notnull: true }
     description:  { type: string(4000), notnull: true }
+    requirements_one: { type: string(4000), notnull: true } 
+    requirements_two: { type: string(4000), notnull: true } 
+    requirements_three: { type: string(4000), notnull: true }          
     how_to_apply: { type: string(4000), notnull: true }
     token:        { type: string(255), notnull: true, unique: true }
     is_public:    { type: boolean, notnull: true, default: 1 }

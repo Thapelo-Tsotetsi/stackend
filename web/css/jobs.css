@@ -51,22 +51,35 @@
   width: 22%;
 }
 
+.jobs .closing_date
+{
+  color: #524F46;
+  font-weight: bold;
+  width: 13%;
+}
+
+.jobs td.closing_date
+{
+  border-right: 1px dotted #999;
+}
+
+
 .jobs .company
 {
   color: #d2813f;
-  width: 22%;
+  width: 35%;
 }
 
 .jobs .position
 {
   padding: 0;
   color: #524F46;
-  width: 45%;
+  width: 60%;
 }
 
 .jobs .position a
 {
-  padding: 12px 15px;
+  padding: 10px 13px;
   display: block;
   text-decoration: none;
 }

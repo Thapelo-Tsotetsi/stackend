@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <title>Stackend Admin Interface</title>
+    <title>Stackapp Admin Interface</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php use_stylesheet('admin.css') ?>
     <?php include_javascripts() ?>
@@ -55,8 +55,8 @@
 
  
       <div id="footer">
-        <img src="/images/jobeet-mini.png" />
-        powered by <a href="/">
+        <!--<img src="/images/jobeet-mini.png" /> -->
+        Powered by <a href="/">
         <img src="/images/symfony.gif" alt="symfony framework" /></a>
       </div>
     </div>
